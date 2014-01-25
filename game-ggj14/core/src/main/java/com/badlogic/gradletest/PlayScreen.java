@@ -2,8 +2,13 @@ package com.badlogic.gradletest;
 
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.GL10;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
+import com.badlogic.gdx.maps.tiled.TmxMapLoader;
+import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 
 import java.util.ArrayList;
 
@@ -14,6 +19,9 @@ public class PlayScreen extends Screen {
 
     public static SpriteBatch batch;
     Texture ground;
+    private TiledMap map;
+    private OrthogonalTiledMapRenderer renderer;
+    private OrthographicCamera guiCam;
 
     Player player;
 
@@ -23,22 +31,33 @@ public class PlayScreen extends Screen {
         batch = new SpriteBatch();
         ground = new Texture("ground.png");
 
-        player = new Player(120, 16);
+
+
+        map = new TmxMapLoader().load("data/Ground.tmx");
+        renderer = new OrthogonalTiledMapRenderer(map);
+        player = new Player(120, 32,(TiledMapTileLayer) map.getLayers().get(0));
+        guiCam = new OrthographicCamera(512,480);
+        guiCam.position.set(480, 320, 0);
+        guiCam.viewportWidth = 480;
+        guiCam.viewportHeight = 320;
+
+
+        guiCam.position.set(player.getX() + (player.getWidth() * 6), player.getY() + player.getHeight()*2, 0);
+        guiCam.update();
+
         gameObjects.add(player);
-        gameObjects.add(new Box(500, 16));
+        Gdx.input.setInputProcessor(player);
+
     }
 
     @Override
     public void update(float deltaTime) {
         for(GameObject go : gameObjects){
             go.update(deltaTime);
-            if(((Object) go).getClass() == Box.class){
-                if(OverlapTester.overlapRectangles(player.bounds, go.bounds)){
-                    System.out.println("COLLISION");
-                }
-            }
         }
+        guiCam.position.set(player.getX() + (player.getWidth() * 6), 160, 0);
 
+        guiCam.update();
     }
 
     @Override
@@ -47,11 +66,17 @@ public class PlayScreen extends Screen {
         Gdx.gl.glClearColor(0.4f, 0.6f, 0.2f, 1);
         Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
+//        batch.begin();
+//        batch.draw(ground, 0, 0);
+//        for(GameObject go : gameObjects){
+//            go.render();
+//        }
+//        batch.end();
+
+        renderer.setView(guiCam);
         batch.begin();
-        batch.draw(ground, 0, 0);
-        for(GameObject go : gameObjects){
-            go.render();
-        }
+        renderer.render();
+        player.render();
         batch.end();
     }
 
@@ -68,5 +93,10 @@ public class PlayScreen extends Screen {
     @Override
     public void dispose() {
 
+    }
+    @Override
+    public void resize(int width , int height){
+        guiCam.viewportWidth = width / 2.5f;
+        guiCam.viewportHeight = height / 2.5f;
     }
 }

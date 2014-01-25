@@ -84,5 +84,9 @@ public class MainMenuScreen extends Screen {
     public void dispose() {
 
     }
+    @Override
+    public  void resize(int width, int height){
+
+    }
 
 }

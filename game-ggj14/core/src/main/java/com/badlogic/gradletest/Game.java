@@ -40,7 +40,7 @@ public abstract class Game implements ApplicationListener{
 
     @Override
     public void resize(int arg0, int arg1) {
-
+        screen.resize(arg0,arg1);
     }
 
     @Override

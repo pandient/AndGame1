@@ -67,4 +67,9 @@ public class AboutScreen extends Screen{
 
     }
 
+    @Override
+    public void resize(int x, int y) {
+
+    }
+
 }
