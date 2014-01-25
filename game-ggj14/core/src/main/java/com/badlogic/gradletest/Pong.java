@@ -3,6 +3,7 @@ package com.badlogic.gradletest;
 /**
  * Created by Saad Shaharyar.
  */
+
 public class Pong extends Game{
     boolean firstTimeCreate = true;
 
