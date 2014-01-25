@@ -67,16 +67,16 @@
       <file leaf-file-name="DesktopLauncher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/desktop/src/main/java/com/badlogic/gradletest/DesktopLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+            <state line="14" column="0" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="340">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayScreen.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PlayScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/PlayScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="5" selection-start="526" selection-end="526" vertical-scroll-proportion="0.43333334" vertical-offset="239" max-vertical-offset="1088">
+            <state line="33" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1088">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,13 +84,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenuScreen.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainMenuScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/MainMenuScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="23" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1547">
+            <state line="48" column="29" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.6814988" vertical-offset="525" max-vertical-offset="1598">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OverlapTester.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/OverlapTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="26" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,10 +107,8 @@
       <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="8" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="646">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="23" column="5" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="646">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,9 +133,9 @@
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Screen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Pong.java" />
         <option value="$PROJECT_DIR$/desktop/src/main/java/com/badlogic/gradletest/DesktopLauncher.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/MainMenuScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Player.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/PlayScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/MainMenuScreen.java" />
       </list>
     </option>
   </component>
@@ -137,8 +144,10 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -171,7 +180,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -320,6 +328,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -378,19 +387,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -416,6 +412,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -550,7 +559,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -558,6 +567,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39871383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -571,11 +581,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2525926" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33118972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25256222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33038348" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -604,14 +613,39 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/desktop/src/main/java/com/badlogic/gradletest/DesktopLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="323">
+        <state line="14" column="0" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/Screen.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/PlayScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="918">
+        <state line="24" column="5" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1071">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/MainMenuScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="23" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1547">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="8" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desktop/src/main/java/com/badlogic/gradletest/DesktopLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="38" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="323">
           <folding />
         </state>
       </provider>
@@ -619,13 +653,6 @@
     <entry file="file://$PROJECT_DIR$/desktop/src/main/java/com/badlogic/gradletest/DesktopLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="27" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="918">
           <folding />
         </state>
       </provider>
@@ -647,25 +674,6 @@
     <entry file="file://$PROJECT_DIR$/android/src/com/badlogicgames/gradletest/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="1" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="16" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="1037" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/OverlapTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
@@ -719,27 +727,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/MainMenuScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="23" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1547">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="8" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="646">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="23" column="5" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="646">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/PlayScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="526" selection-end="526" vertical-scroll-proportion="0.43333334" vertical-offset="239" max-vertical-offset="1088">
+        <state line="33" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1088">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/OverlapTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="26" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/MainMenuScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="29" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.6814988" vertical-offset="525" max-vertical-offset="1598">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

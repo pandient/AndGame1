@@ -34,22 +34,25 @@ public class MainMenuScreen extends Screen {
 
     @Override
     public void update(float deltaTime) {
-        guiCam.unproject(touchPoint.set(Gdx.input.getX(), Gdx.input.getY(), 0));
+        if (Gdx.input.justTouched()){
+            guiCam.unproject(touchPoint.set(Gdx.input.getX(), Gdx.input.getY(), 0));
 
             if(OverlapTester.pointInRectangle(newgameBounds, touchPoint.x, touchPoint.y)){
                 Assets.playSound(Assets.bounceSound);
                 game.setScreen(new PlayScreen(game));
                 return;
             }
-//            if (OverlapTester.pointInRectangle(helpBounds, touchPoint.x, touchPoint.y)){
-//                Assets.playSound(Assets.bounceSound);
-//                game.setScreen(new Help1Screen(game));
-//                return;
-//            }
-        if (OverlapTester.pointInRectangle(aboutBounds, touchPoint.x, touchPoint.y)){
-            Assets.playSound(Assets.bounceSound);
-            game.setScreen(new AboutScreen(game));
-            return;
+
+    //            if (OverlapTester.pointInRectangle(helpBounds, touchPoint.x, touchPoint.y)){
+    //                Assets.playSound(Assets.bounceSound);
+    //                game.setScreen(new Help1Screen(game));
+    //                return;
+    //            }
+            if (OverlapTester.pointInRectangle(aboutBounds, touchPoint.x, touchPoint.y)){
+                Assets.playSound(Assets.bounceSound);
+                game.setScreen(new AboutScreen(game));
+                return;
+            }
         }
     }
 
