@@ -6,7 +6,7 @@ import com.badlogic.gdx.math.Vector2;
 /**
  * Created by Saad Shaharyar.
  */
-public class GameObject extends Rectangle {
+public abstract class GameObject extends Rectangle {
     public final Vector2 position;
     public final Rectangle bounds;
     public final Vector2 velocity;
@@ -18,5 +18,8 @@ public class GameObject extends Rectangle {
         velocity = new Vector2();
         accel = new Vector2();
     }
+
+    abstract void update(float delta);
+    abstract void render();
 
 }

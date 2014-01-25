@@ -5,28 +5,33 @@ import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+import java.util.ArrayList;
+
 /**
  * Created by Khoa Nguyen on 24/01/14.
  */
 public class PlayScreen extends Screen {
 
-    SpriteBatch batch;
+    public static SpriteBatch batch;
     Texture ground;
 
     Player player;
 
     public PlayScreen(Game game) {
         super(game);
-
+        gameObjects = new ArrayList<GameObject>();
         batch = new SpriteBatch();
         ground = new Texture("ground.png");
 
         player = new Player(120, 16);
+        gameObjects.add(player);
     }
 
     @Override
     public void update(float deltaTime) {
-
+        for(GameObject go : gameObjects){
+            go.update(deltaTime);
+        }
     }
 
     @Override
@@ -37,7 +42,7 @@ public class PlayScreen extends Screen {
 
         batch.begin();
         batch.draw(ground, 0, 0);
-        player.render(batch);
+        player.render();
         batch.end();
     }
 

@@ -1,5 +1,7 @@
 package com.badlogic.gradletest;
 
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
@@ -10,7 +12,7 @@ public class Player extends GameObject {
 
     public static final float WIDTH = 32;
     public static final float HEIGHT = 64;
-    public float velocity = 5;
+    public boolean isJumping = false;
 
     private Texture image;
 
@@ -22,11 +24,22 @@ public class Player extends GameObject {
 
     public void update(float delta)
     {
-        position.add(velocity * delta, 0);
+        if(position.y > 16){
+            velocity.add(0, -1700f*delta);
+        } else {
+            isJumping = false;
+            velocity.set(0, 0);
+            position.y = 16;
+        }
+        if(Gdx.input.isKeyPressed(Input.Keys.SPACE) && !isJumping){
+            isJumping = true;
+            velocity.set(0, 1000);
+        }
+        position.add(velocity.x * delta, velocity.y * delta);
     }
 
-    public void render(SpriteBatch batch)
+    public void render()
     {
-        batch.draw(image, position.x, position.y);
+        PlayScreen.batch.draw(image, position.x, position.y);
     }
 }

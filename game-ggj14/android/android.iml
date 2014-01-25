@@ -39,6 +39,7 @@
         <JAVADOC />
         <SOURCES>
           <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ideaLibSources/gdx-0.9.9-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
