@@ -32,7 +32,13 @@ public class PlayScreen extends Screen {
     public void update(float deltaTime) {
         for(GameObject go : gameObjects){
             go.update(deltaTime);
+            if(((Object) go).getClass() == Box.class){
+                if(OverlapTester.overlapRectangles(player.bounds, go.bounds)){
+                    System.out.println("COLLISION");
+                }
+            }
         }
+
     }
 
     @Override

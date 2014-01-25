@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Rectangle;
 
 /**
  * Created by Khoa Nguyen on 24/01/14.
@@ -36,6 +37,7 @@ public class Player extends GameObject {
             velocity.set(0, 1000);
         }
         position.add(velocity.x * delta, velocity.y * delta);
+        bounds.setPosition(position);
     }
 
     public void render()
