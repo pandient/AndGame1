@@ -25,6 +25,7 @@ public class PlayScreen extends Screen {
 
         player = new Player(120, 16);
         gameObjects.add(player);
+        gameObjects.add(new Box(500, 16));
     }
 
     @Override
@@ -42,7 +43,9 @@ public class PlayScreen extends Screen {
 
         batch.begin();
         batch.draw(ground, 0, 0);
-        player.render();
+        for(GameObject go : gameObjects){
+            go.render();
+        }
         batch.end();
     }
 
