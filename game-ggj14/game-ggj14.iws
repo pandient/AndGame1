@@ -73,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenuScreen.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainMenuScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/MainMenuScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="9" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.5" vertical-offset="510" max-vertical-offset="1581">
+            <state line="54" column="9" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1581">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,10 +106,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Screen.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Screen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Screen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="11" column="8" selection-start="184" selection-end="184" vertical-scroll-proportion="0.22916667" vertical-offset="0" max-vertical-offset="816">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Screen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/Screen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="17" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -148,15 +157,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DesktopLauncher.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/desktop/src/main/java/com/badlogic/gradletest/DesktopLauncher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="39" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Pong.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Pong.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -180,7 +180,6 @@
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/TheGame.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Assets.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/GameObject.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Screen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Game.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/PlayScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/OverlapTester.java" />
@@ -188,6 +187,7 @@
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Pong.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/AboutScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/MainMenuScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Screen.java" />
       </list>
     </option>
   </component>
@@ -702,35 +702,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="5" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.22916667" vertical-offset="0" max-vertical-offset="816">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,10 +754,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/MainMenuScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="9" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.5" vertical-offset="510" max-vertical-offset="1581">
+        <state line="54" column="9" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1581">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="20" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/badlogic/gradletest/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="184" selection-end="184" vertical-scroll-proportion="0.22916667" vertical-offset="0" max-vertical-offset="816">
+          <folding />
         </state>
       </provider>
     </entry>
