@@ -5,9 +5,8 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.maps.tiled.TiledMapTile;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
-import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 
 /**
@@ -21,21 +20,27 @@ public class Player extends GameObject implements InputProcessor {
 
     private boolean canJump;
 
-
-    private TiledMapTileLayer collisionLayer;
+    private TiledMapTileLayer mapLayer;
 
     private Texture image;
     private Sprite sprite;
     private String blockedKey = "blocked";
+    private String coinKey = "coin";
 
-    public Player(float x, float y , TiledMapTileLayer collisionLayer) {
+    private int numDistance;
+    private int numCoin;
+
+    public Player(float x, float y , TiledMapTileLayer groundLayer) {
+
         super();
-        this.collisionLayer = collisionLayer;
+        this.mapLayer = groundLayer;
         image = new Texture("player.png");
         sprite = new Sprite(image);
         sprite.setPosition(x,y);
         velocity.x = speedX;
 
+        numDistance = 0;
+        numCoin = 0;
     }
 
     public void update(float delta)
@@ -56,9 +61,7 @@ public class Player extends GameObject implements InputProcessor {
         // move on x
         setX(getX() + velocity.x * delta);
 
-        if(velocity.x < 0) // going left
-            collisionX = collidesLeft();
-        else if(velocity.x > 0) // going right
+       if(velocity.x > 0) // going right
             collisionX = collidesRight();
 
         // react to x collision
@@ -81,7 +84,8 @@ public class Player extends GameObject implements InputProcessor {
             velocity.y = 0;
         }
 
-
+        collectCoin();
+        numDistance += velocity.x * (delta/2);
     }
 
     public void render()
@@ -91,41 +95,61 @@ public class Player extends GameObject implements InputProcessor {
     }
 
     private boolean isCellBlocked(float x, float y) {
-        TiledMapTileLayer.Cell cell = collisionLayer.getCell((int) (x / collisionLayer.getTileWidth()), (int) (y / collisionLayer.getTileHeight()));
+        TiledMapTileLayer.Cell cell = mapLayer.getCell((int) (x / mapLayer.getTileWidth()), (int) (y / mapLayer.getTileHeight()));
         return cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey(blockedKey);
     }
 
     public boolean collidesRight() {
-        for(float step = 0; step < getHeight(); step += collisionLayer.getTileHeight() / 2)
+        for(float step = 0; step < getHeight(); step += mapLayer.getTileHeight() / 2)
+        {
             if(isCellBlocked(getX() + getWidth(), getY() + step))
                 return true;
-        return false;
-    }
-
-    public boolean collidesLeft() {
-        for(float step = 0; step < getHeight(); step += collisionLayer.getTileHeight() / 2)
-            if(isCellBlocked(getX(), getY() + step))
-                return true;
+        }
         return false;
     }
 
     public boolean collidesTop() {
-        for(float step = 0; step < getWidth(); step += collisionLayer.getTileWidth() / 2)
+        for(float step = 0; step < getWidth(); step += mapLayer.getTileWidth() / 2)
+        {
             if(isCellBlocked(getX() + step, getY() + getHeight()))
                 return true;
+        }
         return false;
+    }
 
+    public boolean collidesBottom() {
+        for(float step = 0; step < getWidth(); step += mapLayer.getTileWidth() / 2)
+        {
+            if(isCellBlocked(getX() + step, getY()))
+                return true;
+        }
+        return false;
+    }
+
+    private void isCoin(float x, float y ) {
+        TiledMapTileLayer.Cell cell = mapLayer.getCell((int) (x / mapLayer.getTileWidth()), (int) (y / mapLayer.getTileHeight()));
+        if( cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey(coinKey)){
+            mapLayer.setCell((int) (x / mapLayer.getTileWidth()), (int) (y / mapLayer.getTileHeight()), null);
+            numCoin += 1;
+        }
+    }
+
+    private void collectCoin() {
+        for(float step = 0; step < getHeight(); step += mapLayer.getTileHeight() / 2) {
+            isCoin(getX() + getWidth(), getY() + step);
+        }
+    }
+
+    public int getCoin() {
+        return numCoin;
+    }
+
+    public int getDistance() {
+        return numDistance;
     }
 
     public float getHeight() {
         return this.sprite.getHeight();
-    }
-
-    public boolean collidesBottom() {
-        for(float step = 0; step < getWidth(); step += collisionLayer.getTileWidth() / 2)
-            if(isCellBlocked(getX() + step, getY()))
-                return true;
-        return false;
     }
 
     public float getWidth() {
@@ -140,8 +164,6 @@ public class Player extends GameObject implements InputProcessor {
         this.velocity = velocity;
     }
 
-
-
     public float getGravity() {
         return gravity;
     }
@@ -150,12 +172,12 @@ public class Player extends GameObject implements InputProcessor {
         this.gravity = gravity;
     }
 
-    public TiledMapTileLayer getCollisionLayer() {
-        return collisionLayer;
+    public TiledMapTileLayer getMapLayer() {
+        return mapLayer;
     }
 
-    public void setCollisionLayer(TiledMapTileLayer collisionLayer) {
-        this.collisionLayer = collisionLayer;
+    public void setMapLayer(TiledMapTileLayer mapLayer) {
+        this.mapLayer = mapLayer;
     }
 
     @Override

@@ -10,10 +10,8 @@ public abstract class Screen {
     Game game;
     ArrayList<GameObject> gameObjects;
 
-
     public Screen(Game game){
         this.game = game;
-
     }
 
     public abstract void update(float deltaTime);
