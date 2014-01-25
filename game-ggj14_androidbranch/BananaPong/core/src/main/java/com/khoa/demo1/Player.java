@@ -33,6 +33,7 @@ public class Player extends GameObject implements InputProcessor {
     private Sprite sprite;
     private String blockedKey = "blocked";
     private String coinKey = "coin";
+    private String platformKey = "platform";
 
     private int numDistance;
     private int numCoin;
@@ -81,7 +82,7 @@ public class Player extends GameObject implements InputProcessor {
         setY(getY() + velocity.y * delta);
 
         if(velocity.y < 0) // going down
-            canJump = collisionY = collidesBottom();
+            canJump = collisionY = collidesBottom() ;
         else if(velocity.y > 0) // going up
             collisionY = collidesTop();
 
@@ -130,8 +131,19 @@ public class Player extends GameObject implements InputProcessor {
         {
             if(isCellBlocked(getX() + step, getY()))
                 return true;
+            if(isCellPlatform(getX() + step, getY())){
+                return true;
+
+            }
         }
         return false;
+    }
+
+    private boolean isCellPlatform(float x, float y) {
+        Gdx.app.log("", "Collision");
+        TiledMapTileLayer.Cell cell = mapLayer.getCell((int) (x / mapLayer.getTileWidth()), (int) (y / mapLayer.getTileHeight()));
+        return cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey(platformKey);
+
     }
 
     private void isCoin(float x, float y ) {
