@@ -64,46 +64,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AboutScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/AboutScreen.java">
+      <file leaf-file-name="Sprite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/graphics/g2d/Sprite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1394">
+            <state line="476" column="0" selection-start="16509" selection-end="16509" vertical-scroll-proportion="0.0" vertical-offset="7398" max-vertical-offset="10098">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenuScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/MainMenuScreen.java">
+      <file leaf-file-name="PlayScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Assets.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Assets.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="901">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameObject.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/GameObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="374">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="22" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="952">
+            <state line="47" column="64" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1989">
               <folding />
             </state>
           </provider>
@@ -112,16 +85,7 @@
       <file leaf-file-name="Player.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="0" selection-start="4819" selection-end="4819" vertical-scroll-proportion="0.4636804" vertical-offset="2473" max-vertical-offset="3740">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputProcessor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/InputProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="17" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1377">
+            <state line="106" column="70" selection-start="2950" selection-end="2950" vertical-scroll-proportion="0.3219178" vertical-offset="1282" max-vertical-offset="4080">
               <folding />
             </state>
           </provider>
@@ -130,7 +94,7 @@
       <file leaf-file-name="Pong.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Pong.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="476">
+            <state line="6" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
@@ -139,16 +103,7 @@
       <file leaf-file-name="Screen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Screen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="22" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="595">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloApp.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/HelloApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="1" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="731">
+            <state line="8" column="22" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -170,9 +125,12 @@
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/gradletest/HelloScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/GDXDemo1/HelloScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/HelloScreen.java" />
-        <option value="$PROJECT_DIR$/desktop/src/main/java/com/khoa/demo1/DesktopLauncher.java" />
         <option value="$PROJECT_DIR$/android/src/com/khoa/demo1/MainActivity.java" />
+        <option value="$PROJECT_DIR$/android/assets/data/Level1.tmx" />
         <option value="$PROJECT_DIR$/android/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/desktop/src/main/java/com/khoa/demo1/DesktopLauncher.java" />
+        <option value="$PROJECT_DIR$/../../../../PlayScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java" />
       </list>
     </option>
@@ -182,10 +140,10 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="943" />
-    <option name="y" value="679" />
-    <option name="width" value="1280" />
-    <option name="height" value="1400" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -251,6 +209,110 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BananaPong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="khoa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BananaPong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BananaPong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="khoa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BananaPong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="android" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -270,6 +332,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BananaPong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -509,8 +593,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="943" y="679" width="1280" height="1400" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -530,8 +614,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27373418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31477186" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13515624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31092438" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -561,13 +645,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/AboutScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/MainMenuScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1666">
@@ -715,7 +792,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/desktop/src/main/java/com/khoa/demo1/DesktopLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="357" />
+        <state line="11" column="28" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="357">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/android/src/com/khoa/demo1/MainActivity.java">
@@ -737,7 +816,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/desktop/src/main/java/com/khoa/demo1/DesktopLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="357" />
+        <state line="11" column="28" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="357">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/android/src/com/khoa/demo1/MainActivity.java">
@@ -759,7 +840,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/desktop/src/main/java/com/khoa/demo1/DesktopLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="357" />
+        <state line="11" column="28" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="357">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/android/src/com/khoa/demo1/MainActivity.java">
@@ -770,27 +853,6 @@
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/HelloScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="30" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/HelloApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="1" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/AboutScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/GameObject.java">
@@ -807,35 +869,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Pong.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/desktop/src/main/java/com/khoa/demo1/DesktopLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="39" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android/src/com/khoa/demo1/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="29" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="136" selection-end="136" vertical-scroll-proportion="0.041412912" vertical-offset="0" max-vertical-offset="821">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/MainMenuScreen.java">
@@ -852,9 +888,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/AboutScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.020262217" vertical-offset="119" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="53" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../PlayScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="43" selection-start="1105" selection-end="1113" vertical-scroll-proportion="0.50655544" vertical-offset="0" max-vertical-offset="1921">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/assets/player.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="211" selection-end="211" vertical-scroll-proportion="0.1215733" vertical-offset="0" max-vertical-offset="839">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/HelloApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="1" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/assets/player2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/assets/data/Level1.tmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="227" selection-end="227" vertical-scroll-proportion="0.060212515" vertical-offset="0" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desktop/src/main/java/com/khoa/demo1/DesktopLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="0.2767442" vertical-offset="0" max-vertical-offset="860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/graphics/g2d/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="476" column="0" selection-start="16509" selection-end="16509" vertical-scroll-proportion="0.0" vertical-offset="7398" max-vertical-offset="10098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Pong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="64" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="0" selection-start="4819" selection-end="4819" vertical-scroll-proportion="0.4636804" vertical-offset="2473" max-vertical-offset="3740">
+        <state line="106" column="70" selection-start="2950" selection-end="2950" vertical-scroll-proportion="0.3219178" vertical-offset="1282" max-vertical-offset="4080">
           <folding />
         </state>
       </provider>

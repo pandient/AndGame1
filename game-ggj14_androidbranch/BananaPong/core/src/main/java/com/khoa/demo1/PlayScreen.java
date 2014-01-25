@@ -20,10 +20,13 @@ public class PlayScreen extends Screen {
     public static SpriteBatch batch;
     Texture ground;
     private TiledMap map;
+    Texture background1, background2;
     private OrthogonalTiledMapRenderer renderer;
     private OrthographicCamera guiCam;
-
+    private SpriteBatch batchFont;
     Player player;
+    int backgroundPosition = 0;
+    static final int backgroundSpeed = 100;
 
     public PlayScreen(Game game) {
         super(game);
@@ -31,22 +34,24 @@ public class PlayScreen extends Screen {
         batch = new SpriteBatch();
         ground = new Texture("ground.png");
 
-
-
         map = new TmxMapLoader().load("data/Ground.tmx");
         renderer = new OrthogonalTiledMapRenderer(map);
-        player = new Player(120, 32,(TiledMapTileLayer) map.getLayers().get(0));
+        player = new Player(120, 64,(TiledMapTileLayer) map.getLayers().get(0));
         guiCam = new OrthographicCamera(512,480);
         guiCam.position.set(480, 320, 0);
-        guiCam.viewportWidth = 480;
-        guiCam.viewportHeight = 320;
+        guiCam.viewportWidth = 1024;
+        guiCam.viewportHeight = 512;
+        background1 = new Texture("data/parallax.png");
+        background2 = new Texture("data/parallax.png");
+        backgroundPosition = 0;
 
-
-        guiCam.position.set(player.getX() + (player.getWidth() * 6), player.getY() + player.getHeight()*2, 0);
+        guiCam.position.set(player.getX() + player.getWidth()*12, 256, 0);
         guiCam.update();
 
         gameObjects.add(player);
         Gdx.input.setInputProcessor(player);
+
+       batchFont = new SpriteBatch();
 
     }
 
@@ -55,9 +60,14 @@ public class PlayScreen extends Screen {
         for(GameObject go : gameObjects){
             go.update(deltaTime);
         }
-        guiCam.position.set(player.getX() + (player.getWidth() * 6), 160, 0);
+        guiCam.position.set(player.getX() + (player.getWidth() * 12), 256, 0);
 
         guiCam.update();
+
+        backgroundPosition -= backgroundSpeed * deltaTime;
+        if(backgroundPosition < -background1.getWidth()){
+            backgroundPosition += background1.getWidth();
+        }
     }
 
     @Override
@@ -66,18 +76,27 @@ public class PlayScreen extends Screen {
         Gdx.gl.glClearColor(0.4f, 0.6f, 0.2f, 1);
         Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
-//        batch.begin();
-//        batch.draw(ground, 0, 0);
-//        for(GameObject go : gameObjects){
-//            go.render();
-//        }
-//        batch.end();
 
         renderer.setView(guiCam);
+
+        batch.begin();
+        batch.draw(background1, 0 + backgroundPosition, 0);
+        batch.draw(background1, background1.getWidth() + backgroundPosition, 0);
+        batch.draw(background1, background1.getWidth() * 2 + backgroundPosition, 0);
+        batch.end();
+
         batch.begin();
         renderer.render();
         player.render();
         batch.end();
+
+
+
+        batchFont.begin();
+        Assets.font.setScale(0.8f);
+        Assets.font.draw(batchFont, player.getDistance() + "m", 10, 502);
+        Assets.font.draw(batchFont, "$" + player.getCoin(), 10, 480);
+        batchFont.end();
     }
 
     @Override
