@@ -45,7 +45,7 @@ public class PlayScreen extends Screen {
         background2 = new Texture("data/parallax.png");
         backgroundPosition = 0;
 
-        guiCam.position.set(player.getX() + player.getWidth()*12, 256, 0);
+        guiCam.position.set(player.getX() + player.getWidth()*3, 256, 0);
         guiCam.update();
 
         gameObjects.add(player);
@@ -74,7 +74,7 @@ public class PlayScreen extends Screen {
         Gdx.gl.glClearColor(0.4f, 0.6f, 0.2f, 1);
         Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
-        guiCam.position.set(player.getX() + (player.getWidth() * 12), 256, 0);
+        guiCam.position.set(player.getX() + (player.getWidth() * 3), 256, 0);
 
         guiCam.update();
         renderer.setView(guiCam);

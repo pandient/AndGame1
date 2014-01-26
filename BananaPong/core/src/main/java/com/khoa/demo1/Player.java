@@ -5,6 +5,7 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.math.Vector2;
 
@@ -16,6 +17,9 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.maps.tiled.TiledMapTile;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.math.Vector2;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Khoa Nguyen on 24/01/14.
@@ -39,6 +43,14 @@ public class Player extends GameObject implements InputProcessor {
     private int numDistance;
     private int numCoin;
 
+    List<Sprite> spriteArray = new ArrayList<Sprite>();
+    Texture texture = new Texture("panda.png");
+    TextureRegion frame1 = new TextureRegion(texture, 0, 0, 48, 64);
+    TextureRegion frame2 = new TextureRegion(texture, 48, 0, 48, 64);
+    TextureRegion frame3 = new TextureRegion(texture, 48*2, 0, 48, 64);
+    TextureRegion frame4 = new TextureRegion(texture, 48*3, 0, 48, 64);
+    float spriteIndex = 0;
+
     public Player(float x, float y , TiledMapTileLayer groundLayer) {
 
         super();
@@ -50,15 +62,26 @@ public class Player extends GameObject implements InputProcessor {
         velocity.y = 0;
         numDistance = 0;
         numCoin = 0;
+
+        spriteArray.add(new Sprite(frame1));
+        spriteArray.add(new Sprite(frame2));
+        spriteArray.add(new Sprite(frame3));
+        spriteArray.add(new Sprite(frame4));
     }
 
     public void update(float delta)
     {
-        Gdx.app.log("Player", delta + "");
+
+        spriteIndex += 20*delta;
+        Sprite spriteToChangeTo = spriteArray.get(((int) spriteIndex) % 4);
+        spriteToChangeTo.setPosition(sprite.getX(), sprite.getY());
+        sprite.set(spriteToChangeTo);
+
+
         // apply gravity
-        if(!canJump){
+
         velocity.y -= gravity * delta;
-        }
+
         // clamp velocity
         if(velocity.y > speedY)
             velocity.y = speedY;

@@ -76,7 +76,7 @@
       <file leaf-file-name="PlayScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="48" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.061519902" vertical-offset="391" max-vertical-offset="2057">
+            <state line="43" column="46" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.67671895" vertical-offset="0" max-vertical-offset="2057">
               <folding />
             </state>
           </provider>
@@ -85,8 +85,10 @@
       <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="47" selection-start="3832" selection-end="3832" vertical-scroll-proportion="0.0" vertical-offset="1751" max-vertical-offset="4522">
-              <folding />
+            <state line="88" column="33" selection-start="2751" selection-end="2751" vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="4845">
+              <folding>
+                <element signature="e#1368#1376#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -682,7 +684,9 @@
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="185" column="0" selection-start="4819" selection-end="4819" vertical-scroll-proportion="0.0" vertical-offset="3145" max-vertical-offset="3740">
-          <folding />
+          <folding>
+            <element signature="e#1368#1376#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -750,7 +754,9 @@
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="171" column="13" selection-start="4563" selection-end="4563" vertical-scroll-proportion="0.0" vertical-offset="2907" max-vertical-offset="3740">
-          <folding />
+          <folding>
+            <element signature="e#1368#1376#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -961,14 +967,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="47" selection-start="3832" selection-end="3832" vertical-scroll-proportion="0.0" vertical-offset="1751" max-vertical-offset="4522">
-          <folding />
+        <state line="88" column="33" selection-start="2751" selection-end="2751" vertical-scroll-proportion="0.0" vertical-offset="497" max-vertical-offset="4845">
+          <folding>
+            <element signature="e#1368#1376#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="48" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.061519902" vertical-offset="391" max-vertical-offset="2057">
+        <state line="43" column="46" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.67671895" vertical-offset="0" max-vertical-offset="2057">
           <folding />
         </state>
       </provider>
