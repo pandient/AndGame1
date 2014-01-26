@@ -28,7 +28,7 @@ public class Player extends GameObject implements InputProcessor {
 
     private Vector2 velocity = new Vector2();
 
-    private float speedX = 60 * 3, speedY = 60 * 36 , gravity = 60 * 54 , animationTime = 0;
+    private float speedX = 60 * 3f, speedY = 60 * 36 , gravity = 60 * 54 , animationTime = 0;
 
     private boolean canJump;
 
@@ -169,7 +169,7 @@ public class Player extends GameObject implements InputProcessor {
         {
             if(isCellBlocked(getX() + step, getY() + getHeight()))
                 return true;
-            if (isCellObstacle(getX() + step, getY() - getHeight()))
+            if (isCellObstacle(getX() + step, getY() + getHeight()))
                 isAlive = false;
         }
         return false;
@@ -178,11 +178,12 @@ public class Player extends GameObject implements InputProcessor {
     public boolean collidesBottom() {
         for(float step = 0; step < getWidth(); step += mapLayer.getTileWidth() / 2)
         {
+            System.out.println(step);
             if(isCellBlocked(getX() + step, getY()))
                 return true;
             if(isCellPlatform(getX() + step, getY()))
                 return true;
-            if (isCellObstacle(getX() + step, getY()))
+            if (isCellObstacle(getX() + getWidth()/2, getY()))
                 isAlive = false;
         }
         return false;
@@ -205,7 +206,7 @@ public class Player extends GameObject implements InputProcessor {
     private void collectCoin() {
         for(float stepX = 0; stepX < getWidth(); stepX += mapLayer.getTileWidth() / 4) {
             for(float stepY = 0; stepY < getHeight(); stepY += mapLayer.getTileHeight() / 4) {
-            isCoin(getX() - getWidth()/2 + stepX, getY() - getHeight()/2+stepY);
+            isCoin(getX() + stepX, getY()+stepY);
             }
         }
     }
