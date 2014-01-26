@@ -20,8 +20,8 @@ public class AboutScreen extends Screen{
 
     public AboutScreen(Game game){
         super(game);
-        guiCam = new OrthographicCamera(480,320);
-        guiCam.position.set(480 / 2, 320 / 2, 0);
+        guiCam = new OrthographicCamera(800,480);
+        guiCam.position.set(800/2, 480/2, 0);
         batcher = new SpriteBatch();
         backBounds = new Rectangle(399, 9, 66, 21);
         touchPoint = new Vector3();
@@ -49,7 +49,7 @@ public class AboutScreen extends Screen{
         batcher.setProjectionMatrix(guiCam.combined);
         batcher.disableBlending();
         batcher.begin();
-        batcher.draw(Assets.aboutScreenRegion, 0, 0, 480, 320);
+        //batcher.draw(Assets.aboutScreenRegion, 0, 0, 480, 320);
         batcher.end();
     }
 

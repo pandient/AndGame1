@@ -13,7 +13,6 @@ import com.badlogic.gdx.math.Vector3;
 
 public class ResultScreen extends Screen{
     private final Screen parent;
-    private Texture img;
 
     private OrthographicCamera guiCam;
     private Rectangle retryBounds;
@@ -22,18 +21,15 @@ public class ResultScreen extends Screen{
     private String distanceStr, candyStr;
     private SpriteBatch batchFont;
 
-//    private float screenWidth;
-//    private float screenHeight;
-
     public ResultScreen(Game game, Screen parent, int distance, int candy) {
         super(game);
 
         this.parent = parent;
-        img = new Texture("data/board.png");
 
-        guiCam = new OrthographicCamera(1024, 512);
-        guiCam.position.set(1024/2, 512/2, 0);
-        retryBounds = new Rectangle(280, 75, 512, 256);
+        guiCam = new OrthographicCamera(800, 480);
+        guiCam.position.set(800/2, 480/2, 0);
+        retryBounds = new Rectangle(screenWidth/2 - Assets.resultscreenRegion.getRegionWidth()/2,
+                screenHeight/2 - Assets.resultscreenRegion.getRegionHeight()/2, 480, 240);
         touchPoint = new Vector3();
 
         distanceStr = "Distance: " + distance;
@@ -41,9 +37,6 @@ public class ResultScreen extends Screen{
         batchFont = new SpriteBatch();
 
         Assets.gameOver.play();
-        System.out.println("RESULT SCREEN");
-//        screenWidth = Gdx.graphics.getWidth();
-//        screenHeight = Gdx.graphics.getHeight();
     }
 
     @Override
@@ -69,7 +62,8 @@ public class ResultScreen extends Screen{
         parent.present(deltaTime);
 
         spriteBatch.begin();
-        spriteBatch.draw(img, screenWidth/2 - img.getWidth()/2, screenHeight/2 - img.getHeight()/2);
+        spriteBatch.draw(Assets.resultscreenRegion, screenWidth/2 - Assets.resultscreenRegion.getRegionWidth()/2,
+                screenHeight/2 - Assets.resultscreenRegion.getRegionHeight()/2, 480, 240);
         spriteBatch.end();
 
         batchFont.begin();

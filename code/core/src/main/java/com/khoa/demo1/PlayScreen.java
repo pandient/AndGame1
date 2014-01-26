@@ -50,15 +50,15 @@ public class PlayScreen extends Screen {
         renderer = new OrthogonalTiledMapRenderer2(map1);
         renderer2 = new OrthogonalTiledMapRenderer2(map2);
         player = new Player(120, 64,(TiledMapTileLayer) map1.getLayers().get(0));
-        guiCam = new OrthographicCamera(512,480);
-        guiCam.position.set(480, 320, 0);
-        guiCam.viewportWidth = 1024;
-        guiCam.viewportHeight = 512;
+        guiCam = new OrthographicCamera(800,480);
+        guiCam.position.set(800/2, 480/2, 0);
+        guiCam.viewportWidth = 800;
+        guiCam.viewportHeight = 480;
         background1 = new Texture("data/parallax.png");
         background2 = new Texture("data/parallax.png");
         backgroundPosition = 0;
 
-        guiCam.position.set(player.getX() + player.getWidth() * 8, 256, 0);
+        guiCam.position.set(player.getX() + player.getWidth() * 6, 256, 0);
         guiCam.update();
 
         gameObjects.add(player);
@@ -141,7 +141,7 @@ public class PlayScreen extends Screen {
             Gdx.gl.glClearColor(0.4f, 0.6f, 0.2f, 1);
             Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
-            guiCam.position.set(player.getX() + (player.getWidth() * 8), 256, 0);
+        guiCam.position.set(player.getX() + (player.getWidth() * 6), 256, 0);
 
             guiCam.update();
             renderer.setView(guiCam);
@@ -218,7 +218,7 @@ public class PlayScreen extends Screen {
     }
     @Override
     public void resize(int width , int height){
-        guiCam.viewportWidth = width / 2.5f;
-        guiCam.viewportHeight = height / 2.5f;
+        guiCam.viewportWidth = width;
+        guiCam.viewportHeight = height;
     }
 }

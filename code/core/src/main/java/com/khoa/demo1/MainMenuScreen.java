@@ -20,10 +20,10 @@ public class MainMenuScreen extends Screen {
 
     public MainMenuScreen(Game game){
         super(game);
-        guiCam = new OrthographicCamera(480,320);
-        guiCam.position.set(480 / 2, 320 / 2, 0);
+        guiCam = new OrthographicCamera(800,480);
+        guiCam.position.set(800/2, 480/2, 0);
         batcher = new SpriteBatch();
-        newgameBounds = new Rectangle(0, 0, 1024, 512);
+        newgameBounds = new Rectangle(0, 0, 800, 480);
         touchPoint = new Vector3();
         Assets.backgroundMusic.play();;
     }
@@ -62,7 +62,7 @@ public class MainMenuScreen extends Screen {
 
         batcher.disableBlending();
         batcher.begin();
-        batcher.draw(Assets.mainMenuScreenRegion, 0, 0, 480, 320);
+        batcher.draw(Assets.mainMenuScreenRegion, 0, 0, 800, 480);
         batcher.end();
     }
 

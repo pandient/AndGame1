@@ -13,8 +13,8 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public class Assets {
     public static Texture textureatlas;
     public static TextureRegion mainMenuScreenRegion;
-    public static TextureRegion gameoverscreenRegion;
-    public static TextureRegion aboutScreenRegion;
+    public static TextureRegion resultscreenRegion;
+    public static TextureRegion parallaxRegion;
     public static BitmapFont font;
 
 
@@ -32,9 +32,9 @@ public class Assets {
 
     public static void load(){
         textureatlas = loadTexture("data/screen_atlas.png");
-        mainMenuScreenRegion = new TextureRegion(textureatlas, 0, 512, 1024, 512);
-        gameoverscreenRegion = new TextureRegion(textureatlas, 0, 0, 1024, 512);
-        aboutScreenRegion = new TextureRegion(textureatlas, 0, 640, 480, 320);
+        mainMenuScreenRegion = new TextureRegion(textureatlas, 0, 0, 800, 480);
+        resultscreenRegion = new TextureRegion(textureatlas, 0, 480, 480, 240);
+        parallaxRegion = new TextureRegion(textureatlas, 480, 480, 480, 480);
 
         font = new BitmapFont(Gdx.files.internal("data/font.fnt"), Gdx.files.internal("data/font.png"), false);
         font.setColor(0.804f, 0.361f, 0.361f, 1.0f);

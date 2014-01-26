@@ -24,8 +24,8 @@ public class GameOverScreen extends Screen {
     public GameOverScreen(Game game, int distance, int candy) {
         super(game);
 
-        guiCam = new OrthographicCamera(480,320);
-        guiCam.position.set(480 / 2, 320 / 2, 0);
+        guiCam = new OrthographicCamera(800,480);
+        guiCam.position.set(800/2, 480/2, 0);
         batcher = new SpriteBatch();
 
         retryBounds = new Rectangle(0, 0, 1024, 512);
@@ -62,7 +62,7 @@ public class GameOverScreen extends Screen {
 
         batcher.disableBlending();
         batcher.begin();
-        batcher.draw(Assets.gameoverscreenRegion, 0, 0, 480, 320);
+        batcher.draw(Assets.resultscreenRegion, 0, 0, 480, 320);
         batcher.end();
 
         batchFont.begin();
