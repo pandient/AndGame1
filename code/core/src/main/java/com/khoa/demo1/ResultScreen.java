@@ -28,8 +28,7 @@ public class ResultScreen extends Screen{
 
         guiCam = new OrthographicCamera(800, 480);
         guiCam.position.set(800/2, 480/2, 0);
-        retryBounds = new Rectangle(screenWidth/2 - Assets.resultscreenRegion.getRegionWidth()/2,
-                screenHeight/2 - Assets.resultscreenRegion.getRegionHeight()/2, 480, 240);
+        retryBounds = new Rectangle(0, 0, 800, 480);
         touchPoint = new Vector3();
 
         distanceStr = "Distance: " + (int)distance + " m";
@@ -62,8 +61,7 @@ public class ResultScreen extends Screen{
         parent.present(deltaTime);
 
         spriteBatch.begin();
-        spriteBatch.draw(Assets.resultscreenRegion, screenWidth/2 - Assets.resultscreenRegion.getRegionWidth()/2,
-                screenHeight/2 - Assets.resultscreenRegion.getRegionHeight()/2, 480, 240);
+        spriteBatch.draw(Assets.resultscreenRegion, 0, 0, 800, 480);
         spriteBatch.end();
 
         batchFont.begin();

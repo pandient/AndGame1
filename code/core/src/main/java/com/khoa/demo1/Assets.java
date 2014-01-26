@@ -33,7 +33,7 @@ public class Assets {
     public static void load(){
         textureatlas = loadTexture("data/screen_atlas.png");
         mainMenuScreenRegion = new TextureRegion(textureatlas, 0, 0, 800, 480);
-        resultscreenRegion = new TextureRegion(textureatlas, 0, 480, 480, 240);
+        resultscreenRegion = new TextureRegion(textureatlas, 0, 480, 800, 480);
         parallaxRegion = new TextureRegion(textureatlas, 480, 480, 480, 480);
 
         font = new BitmapFont(Gdx.files.internal("data/font.fnt"), Gdx.files.internal("data/font.png"), false);
