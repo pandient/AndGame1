@@ -34,7 +34,7 @@ public class PlayScreen extends Screen {
         batch = new SpriteBatch();
         ground = new Texture("ground.png");
 
-        map = new TmxMapLoader().load("data/map2.tmx");
+        map = new TmxMapLoader().load("data/Level1.tmx");
         renderer = new OrthogonalTiledMapRenderer(map);
         player = new Player(120, 64,(TiledMapTileLayer) map.getLayers().get(0));
         guiCam = new OrthographicCamera(512,480);
@@ -59,14 +59,13 @@ public class PlayScreen extends Screen {
         for(GameObject go : gameObjects){
             go.update(deltaTime);
         }
-        guiCam.position.set(player.getX() + (player.getWidth() * 12), 256, 0);
 
-        guiCam.update();
 
-        backgroundPosition -= backgroundSpeed * deltaTime;
+       // backgroundPosition += backgroundSpeed * deltaTime;
         if(backgroundPosition < -background1.getWidth()){
             backgroundPosition += background1.getWidth();
         }
+        Gdx.app.log("PlayScreen", player.getY() + "");
     }
 
     @Override
@@ -75,19 +74,25 @@ public class PlayScreen extends Screen {
         Gdx.gl.glClearColor(0.4f, 0.6f, 0.2f, 1);
         Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
+        guiCam.position.set(player.getX() + (player.getWidth() * 12), 256, 0);
 
+        guiCam.update();
         renderer.setView(guiCam);
 
-        batch.begin();
-        batch.draw(background1, 0 + backgroundPosition, 0);
-        batch.draw(background1, background1.getWidth() + backgroundPosition, 0);
-        batch.draw(background1, background1.getWidth() * 2 + backgroundPosition, 0);
-        batch.end();
 
-        batch.begin();
+
+
+        renderer.getSpriteBatch().begin();
+        renderer.getSpriteBatch().draw(background1, guiCam.position.x -guiCam.viewportWidth/2 + backgroundPosition, 0);
+        renderer.getSpriteBatch().draw(background1,guiCam.position.x + background1.getWidth()-guiCam.viewportWidth/2 + backgroundPosition, 0);
+        renderer.getSpriteBatch().draw(background1,guiCam.position.x + background1.getWidth() * 2 + backgroundPosition -guiCam.viewportWidth/2, 0);
+        renderer.getSpriteBatch().end();
+
         renderer.render();
-        player.render();
-        batch.end();
+
+        renderer.getSpriteBatch().begin();
+        player.render(renderer.getSpriteBatch());
+        renderer.getSpriteBatch().end();
 
 
 
