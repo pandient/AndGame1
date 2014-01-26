@@ -287,7 +287,6 @@ public class Player extends GameObject implements InputProcessor {
                     Assets.playSound(Assets.jump);
                 }
                 break;
-
         }
         return true;
     }

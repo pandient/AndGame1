@@ -31,6 +31,7 @@ public class PlayScreen extends Screen {
     static final int backgroundSpeed = 100;
 
     private int delayTime;
+    private static PlayScreen thisScreen;
 
     public PlayScreen(Game game) {
         super(game);
@@ -57,6 +58,7 @@ public class PlayScreen extends Screen {
 
         batchFont = new SpriteBatch();
         delayTime = 0;
+        thisScreen = this;
     }
 
     @Override
@@ -74,11 +76,12 @@ public class PlayScreen extends Screen {
 
         if (!player.getAlive()) {
             Assets.backgroundMusic.pause();
-
+            //Assets.obstacleHit.play();
             Timer.schedule(new Timer.Task() {
                 @Override
                 public void run() {
-                    game.setScreen(new GameOverScreen(game, player.getDistance(), player.getCoin()));
+                    //game.setScreen(new GameOverScreen(game, player.getDistance(), player.getCoin()));
+                    setScreen((new ResultScreen(game, thisScreen, player.getDistance(), player.getCoin())));;
                 }
             }, delay);
         }

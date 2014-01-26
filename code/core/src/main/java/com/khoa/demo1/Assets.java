@@ -48,9 +48,6 @@ public class Assets {
         backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("backgroundmusic/POL-sand-and-water-short16.wav"));
         backgroundMusic.setVolume(.2f);
         backgroundMusic.setLooping(true);
-
-
-
     }
 
     public static void playBackgroundMusic(){}

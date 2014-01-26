@@ -35,9 +35,6 @@ public class GameOverScreen extends Screen {
         this.candy = candy;
         batchFont = new SpriteBatch();
 
-
-
-
     }
 
     @Override
