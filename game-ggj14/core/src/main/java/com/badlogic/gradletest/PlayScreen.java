@@ -71,8 +71,8 @@ public class PlayScreen extends Screen {
         renderer.setView(guiCam);
 
         batch.begin();
-        renderer.render();
         player.render();
+        renderer.render();
         batch.end();
 
         batchFont.begin();

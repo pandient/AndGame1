@@ -19,9 +19,10 @@ public class PlayScreen extends Screen {
 
     public static SpriteBatch batch;
     Texture ground;
-    private TiledMap map;
+    private TiledMap map1, map2, map3;
     Texture background1, background2;
     private OrthogonalTiledMapRenderer renderer;
+    private OrthogonalTiledMapRenderer renderer2;
     private OrthographicCamera guiCam;
     private SpriteBatch batchFont;
     Player player;
@@ -34,9 +35,12 @@ public class PlayScreen extends Screen {
         batch = new SpriteBatch();
         ground = new Texture("ground.png");
 
-        map = new TmxMapLoader().load("data/Level1.tmx");
-        renderer = new OrthogonalTiledMapRenderer(map);
-        player = new Player(120, 64,(TiledMapTileLayer) map.getLayers().get(0));
+        map1 = new TmxMapLoader().load("data/Ground.tmx");
+        map2 = new TmxMapLoader().load("data/Level1.tmx");
+        map3 = new TmxMapLoader().load("data/Level2.tmx");
+        renderer = new OrthogonalTiledMapRenderer(map1);
+        renderer2 = new OrthogonalTiledMapRenderer(map2);
+        player = new Player(120, 64,(TiledMapTileLayer) map1.getLayers().get(0));
         guiCam = new OrthographicCamera(512,480);
         guiCam.position.set(480, 320, 0);
         guiCam.viewportWidth = 1024;
@@ -121,5 +125,9 @@ public class PlayScreen extends Screen {
     public void resize(int width , int height){
         guiCam.viewportWidth = width / 2.5f;
         guiCam.viewportHeight = height / 2.5f;
+    }
+
+    public TiledMap getMap(){
+        return renderer.getMap();
     }
 }

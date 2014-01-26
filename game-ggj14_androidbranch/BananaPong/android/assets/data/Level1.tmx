@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="1000" height="40" tilewidth="16" tileheight="16">
- <tileset firstgid="1" name="tilemap" tilewidth="16" tileheight="16">
+<map version="1.0" orientation="orthogonal" width="100" height="16" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="Main" tilewidth="16" tileheight="16">
   <image source="tilemap.png" width="128" height="128"/>
   <tile id="2">
    <properties>
@@ -32,6 +32,46 @@
     <property name="blocked" value=""/>
    </properties>
   </tile>
+  <tile id="11">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
   <tile id="34">
    <properties>
     <property name="platform" value=""/>
@@ -42,35 +82,15 @@
     <property name="platform" value=""/>
    </properties>
   </tile>
-  <tile id="36">
-   <properties>
-    <property name="platform" value=""/>
-   </properties>
-  </tile>
-  <tile id="37">
-   <properties>
-    <property name="platform" value=""/>
-   </properties>
-  </tile>
-  <tile id="38">
-   <properties>
-    <property name="platform" value=""/>
-   </properties>
-  </tile>
-  <tile id="39">
-   <properties>
-    <property name="platform" value=""/>
-   </properties>
-  </tile>
   <tile id="57">
    <properties>
     <property name="coin" value=""/>
    </properties>
   </tile>
  </tileset>
- <layer name="Tile Layer 1" width="1000" height="40">
+ <layer name="Tile Layer 1" width="100" height="16">
   <data encoding="base64" compression="zlib">
-   eJzt3FkKgzAUBVCh4z5qhzVk/wvrA/slBJJQ2yY9By7CJTyCf0p0mgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGFV6BQAAAAAAAAB6lyrzrnkAAADA4lKQOXKN3CL3yKNxZukcz+598/4FAAAAvscZCQAAgHGk1ZV++bYBAACg3Bbn2z+5z1/YGwAAAAAAAADbqv2vemv+iXsHAABAzk6aso8cIsfIqXLtOZPcWr1er9fr9Xq9Xq/Xj98/AQUyL30=
+   eJztldsOgjAMhpeI7MbDjcoDeEw8Xvv+D+ZPHMlcWMWNskz6J1+AUEr7FzalRCKRSJSLtmAH9uAAjuCUtKJx6wwu4Apu4A4eSSsS/aOeBo6cLqJP+TzqwyvfDCjGrBC/UtBVOeznhfLXFOoNp+8xM8lhP58bvinmu+WcCZU/R9Wz2DDkDV1vKD9z99pWvS5NQQm0dV4Z7HtuLOd14UA9pz1xLqVzbOtbt7w7BjvvhKCJnWVE/c8uwNJD17hYOPtbEQzVX19eNHWv1XutrZjg9Iaqf6j+fvUiFbYPXN68ANqZQLQ=
   </data>
  </layer>
 </map>

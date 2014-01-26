@@ -24,9 +24,9 @@ public class Player extends GameObject implements InputProcessor {
 
     private Vector2 velocity = new Vector2();
 
-    private float speedX = 60 * 2, speedY = 60 * 30f , gravity = 60 * 50f , animationTime = 0;
+    private float speedX = 60 * 3, speedY = 60 * 30, gravity = 60 * 50f, animationTime = 0;
 
-    private boolean canJump;
+    private boolean canJump = true;
 
     private TiledMapTileLayer mapLayer;
 
@@ -57,8 +57,9 @@ public class Player extends GameObject implements InputProcessor {
         Gdx.app.log("Player", delta + "");
         // apply gravity
         if(!canJump){
-        velocity.y -= gravity * delta;
+            velocity.y -= gravity * delta;
         }
+
         // clamp velocity
         if(velocity.y > speedY)
             velocity.y = speedY;
