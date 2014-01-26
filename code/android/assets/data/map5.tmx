@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="128" height="16" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tilemap" tilewidth="32" tileheight="32">
+  <image source="tilemap.png" width="256" height="256"/>
+  <tile id="1">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="platform" value=""/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="platform" value=""/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="platform" value=""/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="31">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="40">
+   <properties>
+    <property name="candy" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="128" height="16">
+  <data encoding="base64" compression="zlib">
+   eJztlM0KxCAMBoUe994t3dL9ufn+L7g59BBK1FpCoToDQ8RI8EMwBAAAAAAAAAC4irjZGz1mtmjx/WNI54qGpTM184/cy4OaOVbm/V1KfbgXX/HneO5OzOJLXDI97Z5SPzf/CmrzlZwNz+Tj7+gb3j9Pi3/tWQZnn+Kkqlb3Umurjpn1ZOx7Z2o538PZt/hRVat7qbVVtWtiptY7U8v5/pNdHWI=
+  </data>
+ </layer>
+</map>
