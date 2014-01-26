@@ -62,7 +62,7 @@ public class PlayScreen extends Screen {
         }
 
 
-       // backgroundPosition += backgroundSpeed * deltaTime;
+        backgroundPosition -= backgroundSpeed * deltaTime;
         if(backgroundPosition < -background1.getWidth()){
             backgroundPosition += background1.getWidth();
         }
