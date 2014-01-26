@@ -1,6 +1,7 @@
 package com.khoa.demo1;
 
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import java.util.ArrayList;
@@ -15,10 +16,16 @@ public abstract class Screen {
 
     public SpriteBatch spriteBatch;
 
+    public float screenWidth;
+    public float screenHeight;
+
     public Screen(Game game){
         this.game = game;
 
         spriteBatch = new SpriteBatch();
+
+        screenWidth = Gdx.graphics.getWidth();
+        screenHeight = Gdx.graphics.getHeight();
     }
 
     protected void setScreen(Screen screen) {

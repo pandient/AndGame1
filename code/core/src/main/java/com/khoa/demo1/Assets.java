@@ -37,7 +37,7 @@ public class Assets {
         aboutScreenRegion = new TextureRegion(textureatlas, 0, 640, 480, 320);
 
         font = new BitmapFont(Gdx.files.internal("data/font.fnt"), Gdx.files.internal("data/font.png"), false);
-
+        font.setColor(0.804f, 0.361f, 0.361f, 1.0f);
 
         gameOver = Gdx.audio.newSound(Gdx.files.internal("soundeffect/gameover.mp3"));
 

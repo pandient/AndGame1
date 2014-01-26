@@ -19,8 +19,11 @@ public class ResultScreen extends Screen{
     private Rectangle retryBounds;
     private Vector3 touchPoint;
 
-    private int distance, candy;
+    private String distanceStr, candyStr;
     private SpriteBatch batchFont;
+
+//    private float screenWidth;
+//    private float screenHeight;
 
     public ResultScreen(Game game, Screen parent, int distance, int candy) {
         super(game);
@@ -33,11 +36,14 @@ public class ResultScreen extends Screen{
         retryBounds = new Rectangle(280, 75, 512, 256);
         touchPoint = new Vector3();
 
-        this.distance = distance;
-        this.candy = candy;
+        distanceStr = "Distance: " + distance;
+        candyStr = "Candy: " + candy;
         batchFont = new SpriteBatch();
 
         Assets.gameOver.play();
+
+//        screenWidth = Gdx.graphics.getWidth();
+//        screenHeight = Gdx.graphics.getHeight();
     }
 
     @Override
@@ -62,13 +68,13 @@ public class ResultScreen extends Screen{
         parent.present(deltaTime);
 
         spriteBatch.begin();
-        spriteBatch.draw(img, 275, 180);
+        spriteBatch.draw(img, screenWidth/2 - img.getWidth()/2, screenHeight/2 - img.getHeight()/2);
         spriteBatch.end();
 
         batchFont.begin();
         Assets.font.setScale(1.2f);
-        Assets.font.draw(batchFont, "Distance: " + distance + "m", 380, 400);
-        Assets.font.draw(batchFont, "Candy: " + candy, 380, 365);
+        Assets.font.draw(batchFont, distanceStr, screenWidth/2 - Assets.font.getBounds(distanceStr).width/2, screenHeight/2 + 80);
+        Assets.font.draw(batchFont, candyStr, screenWidth/2 - Assets.font.getBounds(candyStr).width/2, screenHeight/2 + 45);
         batchFont.end();
     }
 
