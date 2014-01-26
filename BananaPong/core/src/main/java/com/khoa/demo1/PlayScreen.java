@@ -9,8 +9,10 @@ import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.utils.Timer;
 
 import java.util.ArrayList;
+
 
 /**
  * Created by Khoa Nguyen on 24/01/14.
@@ -29,13 +31,15 @@ public class PlayScreen extends Screen {
     int backgroundPosition = 0;
     static final int backgroundSpeed = 100;
 
+    private int delayTime;
+
     public PlayScreen(Game game) {
         super(game);
         gameObjects = new ArrayList<GameObject>();
         batch = new SpriteBatch();
         ground = new Texture("ground.png");
 
-        map = new TmxMapLoader().load("data/map3.tmx");
+        map = new TmxMapLoader().load("data/map1.tmx");
         renderer = new OrthogonalTiledMapRenderer(map);
         player = new Player(120, 64,(TiledMapTileLayer) map.getLayers().get(0));
         guiCam = new OrthographicCamera(512,480);
@@ -53,6 +57,7 @@ public class PlayScreen extends Screen {
         Gdx.input.setInputProcessor(player);
 
        batchFont = new SpriteBatch();
+        delayTime = 0;
     }
 
     @Override
@@ -61,14 +66,21 @@ public class PlayScreen extends Screen {
             go.update(deltaTime);
         }
 
-
         backgroundPosition -= backgroundSpeed * deltaTime;
         if(backgroundPosition < -background1.getWidth()){
             backgroundPosition += background1.getWidth();
         }
 
-        if (!player.getAlive())
-            game.setScreen(new GameOverScreen(game, player.getDistance(), player.getCoin()));
+        float delay = 1.0f;
+
+        if (!player.getAlive()) {
+            Timer.schedule(new Timer.Task() {
+                @Override
+                public void run() {
+                    game.setScreen(new GameOverScreen(game, player.getDistance(), player.getCoin()));
+                }
+            }, delay);
+        }
     }
 
     @Override
