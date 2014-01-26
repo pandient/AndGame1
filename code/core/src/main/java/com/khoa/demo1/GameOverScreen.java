@@ -34,6 +34,10 @@ public class GameOverScreen extends Screen {
         this.distance = distance;
         this.candy = candy;
         batchFont = new SpriteBatch();
+
+
+
+
     }
 
     @Override
@@ -42,8 +46,10 @@ public class GameOverScreen extends Screen {
             guiCam.unproject(touchPoint.set(Gdx.input.getX(), Gdx.input.getY(), 0));
 
             if (OverlapTester.pointInRectangle(retryBounds, touchPoint.x, touchPoint.y)){
-                Assets.playSound(Assets.bounceSound);
+
                 game.setScreen(new PlayScreen(game));
+
+                Assets.backgroundMusic.play();
                 return;
             }
         }

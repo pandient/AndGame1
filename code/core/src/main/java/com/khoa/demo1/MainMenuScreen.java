@@ -25,7 +25,7 @@ public class MainMenuScreen extends Screen {
         batcher = new SpriteBatch();
         newgameBounds = new Rectangle(0, 0, 1024, 512);
         touchPoint = new Vector3();
-
+        Assets.backgroundMusic.play();;
     }
 
     @Override
@@ -34,7 +34,7 @@ public class MainMenuScreen extends Screen {
             guiCam.unproject(touchPoint.set(Gdx.input.getX(), Gdx.input.getY(), 0));
 
             if(OverlapTester.pointInRectangle(newgameBounds, touchPoint.x, touchPoint.y)){
-                Assets.playSound(Assets.bounceSound);
+
                 game.setScreen(new PlayScreen(game));
                 return;
             }

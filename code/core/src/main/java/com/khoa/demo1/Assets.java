@@ -17,7 +17,7 @@ public class Assets {
     public static TextureRegion aboutScreenRegion;
     public static BitmapFont font;
 
-    public static Sound bounceSound;
+
     public static Sound gameOver;
     public static Sound jump;
     public static Sound obstacleHit;
@@ -38,15 +38,28 @@ public class Assets {
 
         font = new BitmapFont(Gdx.files.internal("data/font.fnt"), Gdx.files.internal("data/font.png"), false);
 
-        bounceSound = Gdx.audio.newSound(Gdx.files.internal("data/ball_bump.wav"));
+
         gameOver = Gdx.audio.newSound(Gdx.files.internal("soundeffect/gameover.mp3"));
+
         jump = Gdx.audio.newSound(Gdx.files.internal("soundeffect/jump.mp3"));
         pickUp = Gdx.audio.newSound(Gdx.files.internal("soundeffect/pickup.mp3"));
+        obstacleHit = Gdx.audio.newSound(Gdx.files.internal("soundeffect/obstaclehit.mp3"));
 
         backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("backgroundmusic/POL-sand-and-water-short16.wav"));
-        backgroundMusic.setVolume(.3f);
+        backgroundMusic.setVolume(.2f);
+        backgroundMusic.setLooping(true);
 
 
+
+    }
+
+    public static void playBackgroundMusic(){}
+    {
+        backgroundMusic.play();
+    }
+    public static void stopBackgroundMusic(){}
+    {
+        backgroundMusic.pause();
     }
 
     public static void playSound(Sound sound){

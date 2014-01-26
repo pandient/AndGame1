@@ -211,6 +211,7 @@ public class Player extends GameObject implements InputProcessor {
         if (cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey(coinKey)) {
             mapLayer.setCell((int) (x / mapLayer.getTileWidth()), (int) (y / mapLayer.getTileHeight()), null);
             numCoin += 1;
+            Assets.playSound(Assets.pickUp);
         }
     }
 
@@ -283,6 +284,7 @@ public class Player extends GameObject implements InputProcessor {
                 if (canJump) {
                     velocity.y = speedY / 1.8f;
                     canJump = false;
+                    Assets.playSound(Assets.jump);
                 }
                 break;
 
@@ -310,6 +312,7 @@ public class Player extends GameObject implements InputProcessor {
         if (canJump) {
             velocity.y = speedY / 1.8f;
             canJump = false;
+            Assets.playSound(Assets.jump);
         }
         return false;
     }

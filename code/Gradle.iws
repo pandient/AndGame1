@@ -67,11 +67,20 @@
       <file leaf-file-name="PlayScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="25" selection-start="2342" selection-end="2342" vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="2193">
+            <state line="75" column="43" selection-start="2360" selection-end="2360" vertical-scroll-proportion="-13.846154" vertical-offset="728" max-vertical-offset="2227">
               <folding>
-                <element signature="e#2344#2558#0" expanded="true" />
-                <element signature="e#2543#2544#0" expanded="true" />
+                <element signature="e#2389#2603#0" expanded="true" />
+                <element signature="e#2588#2589#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/android/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="38" selection-start="90" selection-end="90" vertical-scroll-proportion="0.06122449" vertical-offset="0" max-vertical-offset="833">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,28 +88,46 @@
       <file leaf-file-name="Assets.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Assets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="21" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+            <state line="42" column="0" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/AboutScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="1292">
               <folding>
                 <element signature="imports" expanded="false" />
-                <marker date="1390715056490" expanded="true" signature="831:892" placeholder="{...}" />
-                <marker date="1390715056490" expanded="true" signature="923:1840" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="33" selection-start="5160" selection-end="5160" vertical-scroll-proportion="0.41852286" vertical-offset="1989" max-vertical-offset="5457">
+            <state line="314" column="25" selection-start="9950" selection-end="9950" vertical-scroll-proportion="-21.346153" vertical-offset="4171" max-vertical-offset="5508">
               <folding>
                 <element signature="e#1515#1523#0" expanded="true" />
                 <element signature="e#5194#5363#0" expanded="true" />
                 <element signature="e#5344#5345#0" expanded="true" />
                 <element signature="e#5882#6051#0" expanded="true" />
                 <element signature="e#6032#6033#0" expanded="true" />
-                <element signature="e#8395#8396#0" expanded="true" />
-                <element signature="e#8425#8426#0" expanded="true" />
+                <element signature="e#8440#8441#0" expanded="true" />
+                <element signature="e#8470#8471#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainMenuScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/MainMenuScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="39" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+              <folding>
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -109,7 +136,7 @@
       <file leaf-file-name="GameOverScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/GameOverScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1649">
+            <state line="36" column="0" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1632">
               <folding />
             </state>
           </provider>
@@ -137,10 +164,12 @@
         <option value="$PROJECT_DIR$/desktop/src/main/java/com/khoa/demo1/DesktopLauncher.java" />
         <option value="$USER_HOME$/PlayScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/MainMenuScreen.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/GameOverScreen.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Assets.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/AboutScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Assets.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/GameOverScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java" />
+        <option value="$PROJECT_DIR$/android/res/values/strings.xml" />
       </list>
     </option>
   </component>
@@ -149,9 +178,10 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
-    <option name="width" value="1280" />
-    <option name="height" value="1400" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -284,7 +314,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soundeffect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -342,7 +434,7 @@
       <recent name="C:\Users\Two\Desktop\android8\trunk\code\android\assets\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Debug Destop">
+  <component name="RunManager" selected="Android Application.Debug Android">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-server&#13;&#10;-Xms128m&#13;&#10;-Xmx512m&#13;&#10;-XX:MaxPermSize=250m&#13;&#10;-XX:ReservedCodeCacheSize=64m&#13;&#10;-ea&#13;&#10;-Dsun.io.useCanonCaches=false&#13;&#10;-Djava.net.preferIPv4Stack=true&#13;&#10;-XX:+UseCodeCacheFlushing&#13;&#10;-XX:+UseConcMarkSweepGC&#13;&#10;-XX:SoftRefLRUPolicyMSPerMB=50" />
@@ -549,8 +641,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="0" width="1280" height="1400" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -563,21 +655,48 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32467532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30775318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3101315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30742186" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3101315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997763" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30775318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3101315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932886" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869297" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -601,13 +720,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="901">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="374">
@@ -631,8 +743,8 @@
             <element signature="e#5344#5345#0" expanded="true" />
             <element signature="e#5882#6051#0" expanded="true" />
             <element signature="e#6032#6033#0" expanded="true" />
-            <element signature="e#8395#8396#0" expanded="true" />
-            <element signature="e#8425#8426#0" expanded="true" />
+            <element signature="e#8440#8441#0" expanded="true" />
+            <element signature="e#8470#8471#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -707,8 +819,8 @@
             <element signature="e#5344#5345#0" expanded="true" />
             <element signature="e#5882#6051#0" expanded="true" />
             <element signature="e#6032#6033#0" expanded="true" />
-            <element signature="e#8395#8396#0" expanded="true" />
-            <element signature="e#8425#8426#0" expanded="true" />
+            <element signature="e#8440#8441#0" expanded="true" />
+            <element signature="e#8470#8471#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -827,13 +939,6 @@
         <state line="26" column="17" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1139" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/AboutScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.020262217" vertical-offset="119" max-vertical-offset="1292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android/assets/player.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -896,58 +1001,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/MainMenuScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="66" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.3942993" vertical-offset="654" max-vertical-offset="1496">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://G:/BananaPong/core/src/main/java/com/khoa/demo1/PlayScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1989" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/GameOverScreen.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/AboutScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1649">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+        <state line="35" column="0" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="1292">
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1390715056490" expanded="true" signature="831:892" placeholder="{...}" />
-            <marker date="1390715056490" expanded="true" signature="923:1840" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="25" selection-start="2342" selection-end="2342" vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="2193">
-          <folding>
-            <element signature="e#2344#2558#0" expanded="true" />
-            <element signature="e#2543#2544#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="33" selection-start="5160" selection-end="5160" vertical-scroll-proportion="0.41852286" vertical-offset="1989" max-vertical-offset="5457">
+        <state line="314" column="25" selection-start="9950" selection-end="9950" vertical-scroll-proportion="-21.346153" vertical-offset="4171" max-vertical-offset="5508">
           <folding>
             <element signature="e#1515#1523#0" expanded="true" />
             <element signature="e#5194#5363#0" expanded="true" />
             <element signature="e#5344#5345#0" expanded="true" />
             <element signature="e#5882#6051#0" expanded="true" />
             <element signature="e#6032#6033#0" expanded="true" />
-            <element signature="e#8395#8396#0" expanded="true" />
-            <element signature="e#8425#8426#0" expanded="true" />
+            <element signature="e#8440#8441#0" expanded="true" />
+            <element signature="e#8470#8471#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/GameOverScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/MainMenuScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="39" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="43" selection-start="2360" selection-end="2360" vertical-scroll-proportion="-13.846154" vertical-offset="728" max-vertical-offset="2227">
+          <folding>
+            <element signature="e#2389#2603#0" expanded="true" />
+            <element signature="e#2588#2589#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="38" selection-start="90" selection-end="90" vertical-scroll-proportion="0.06122449" vertical-offset="0" max-vertical-offset="833">
+          <folding />
         </state>
       </provider>
     </entry>

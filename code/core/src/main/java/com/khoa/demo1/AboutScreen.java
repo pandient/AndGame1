@@ -33,7 +33,7 @@ public class AboutScreen extends Screen{
             guiCam.unproject(touchPoint.set(Gdx.input.getX(), Gdx.input.getY(), 0));
 
             if(OverlapTester.pointInRectangle(backBounds, touchPoint.x, touchPoint.y)){
-                Assets.playSound(Assets.bounceSound);
+
                 game.setScreen(new MainMenuScreen(game));
                 return;
             }

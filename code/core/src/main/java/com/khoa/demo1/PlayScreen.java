@@ -73,6 +73,8 @@ public class PlayScreen extends Screen {
         float delay = 1.0f;
 
         if (!player.getAlive()) {
+            Assets.backgroundMusic.pause();
+
             Timer.schedule(new Timer.Task() {
                 @Override
                 public void run() {
