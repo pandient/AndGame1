@@ -83,13 +83,19 @@ public class PlayScreen extends Screen {
         // picking which to render
             if((player.getX() - 500)% (256*32) < 64*32 && !randomized){
                 System.out.println("FIRST CALLED");
-                int mapNumber = rn.nextInt(3);
+                int mapNumber = rn.nextInt(5);
                 if(mapNumber == 0){
                     map2 = new com.khoa.demo1.TmxMapLoader().load("data/map1.tmx", 128*mapCount);
                 } else if (mapNumber == 1){
                     map2 = new com.khoa.demo1.TmxMapLoader().load("data/map2.tmx", 128*mapCount);
                 } else if (mapNumber == 2){
                     map2 = new com.khoa.demo1.TmxMapLoader().load("data/map3.tmx", 128*mapCount);
+                }
+                 else if (mapNumber == 3){
+                    map2 = new com.khoa.demo1.TmxMapLoader().load("data/map4.tmx", 128*mapCount);
+                }
+                 else if (mapNumber == 4){
+                    map2 = new com.khoa.demo1.TmxMapLoader().load("data/map5.tmx", 128*mapCount);
                 }
                 renderer2.setMap(map2);
                 rendererToUse = 1;
@@ -99,13 +105,19 @@ public class PlayScreen extends Screen {
                 randomized = false;
             } else if ((player.getX() - 500) % (256*32) < 172*32 && !randomized){
                 System.out.println("SECOND CALLED");
-                int mapNumber = rn.nextInt(3);
+                int mapNumber = rn.nextInt(5);
                 if(mapNumber == 0){
                     map1 = new com.khoa.demo1.TmxMapLoader().load("data/map1.tmx", 128*mapCount);
                 } else if (mapNumber == 1){
                     map1 = new com.khoa.demo1.TmxMapLoader().load("data/map2.tmx", 128*mapCount);
                 } else if (mapNumber == 2){
                     map1 = new com.khoa.demo1.TmxMapLoader().load("data/map3.tmx", 128*mapCount);
+                }
+                else if (mapNumber == 3){
+                    map1 = new com.khoa.demo1.TmxMapLoader().load("data/map4.tmx", 128*mapCount);
+                }
+                else if (mapNumber == 4){
+                    map1 = new com.khoa.demo1.TmxMapLoader().load("data/map5.tmx", 128*mapCount);
                 }
                 renderer.setMap(map1);
                 rendererToUse = 2;
