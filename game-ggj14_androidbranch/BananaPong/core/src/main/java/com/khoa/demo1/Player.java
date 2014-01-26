@@ -4,6 +4,7 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.math.Vector2;
 
@@ -23,7 +24,7 @@ public class Player extends GameObject implements InputProcessor {
 
     private Vector2 velocity = new Vector2();
 
-    private float speedX = 60 * 2, speedY = 60 * 36, gravity = 60 * 54f, animationTime = 0;
+    private float speedX = 60 * 2, speedY = 60 * 30f , gravity = 60 * 50f , animationTime = 0;
 
     private boolean canJump;
 
@@ -46,16 +47,18 @@ public class Player extends GameObject implements InputProcessor {
         sprite = new Sprite(image);
         sprite.setPosition(x,y);
         velocity.x = speedX;
-
+        velocity.y = 0;
         numDistance = 0;
         numCoin = 0;
     }
 
     public void update(float delta)
     {
+        Gdx.app.log("Player", delta + "");
         // apply gravity
+        if(!canJump){
         velocity.y -= gravity * delta;
-
+        }
         // clamp velocity
         if(velocity.y > speedY)
             velocity.y = speedY;
@@ -86,9 +89,18 @@ public class Player extends GameObject implements InputProcessor {
         else if(velocity.y > 0) // going up
             collisionY = collidesTop();
 
+
         // react to y collision
         if(collisionY) {
+
+
             setY(oldY);
+            collisionY = false;
+            while(!collisionY){
+                setY(getY() - 1);
+                collisionY = collidesBottom();
+            }
+            setY(getY() + 1);
             velocity.y = 0;
         }
 
@@ -96,10 +108,15 @@ public class Player extends GameObject implements InputProcessor {
         numDistance += velocity.x * (delta/2);
     }
 
-    public void render()
+    @Override
+    void render() {
+        Gdx.app.log("", "Shouldn't call this");
+    }
+
+    public void render(SpriteBatch batch)
     {
         //PlayScreen.batch.draw(image, position.x, position.y);
-        sprite.draw(PlayScreen.batch);
+        sprite.draw(batch);
     }
 
     private boolean isCellBlocked(float x, float y) {
@@ -139,6 +156,7 @@ public class Player extends GameObject implements InputProcessor {
     }
 
     private boolean isCellPlatform(float x, float y) {
+
         TiledMapTileLayer.Cell cell = mapLayer.getCell((int) (x / mapLayer.getTileWidth()), (int) (y / mapLayer.getTileHeight()));
         return cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey(platformKey);
     }
