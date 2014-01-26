@@ -203,8 +203,10 @@ public class Player extends GameObject implements InputProcessor {
     }
 
     private void collectCoin() {
-        for(float step = 0; step < getHeight(); step += mapLayer.getTileHeight() / 2) {
-            isCoin(getX() + getWidth(), getY() + step);
+        for(float stepX = 0; stepX < getWidth(); stepX += mapLayer.getTileWidth() / 4) {
+            for(float stepY = 0; stepY < getHeight(); stepY += mapLayer.getTileHeight() / 4) {
+            isCoin(getX() - getWidth()/2 + stepX, getY() - getHeight()/2+stepY);
+            }
         }
     }
 
