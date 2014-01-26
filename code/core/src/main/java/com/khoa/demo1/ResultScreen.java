@@ -21,7 +21,7 @@ public class ResultScreen extends Screen{
     private String distanceStr, candyStr;
     private SpriteBatch batchFont;
 
-    public ResultScreen(Game game, Screen parent, int distance, int candy) {
+    public ResultScreen(Game game, Screen parent, float distance, int candy) {
         super(game);
 
         this.parent = parent;
@@ -32,7 +32,7 @@ public class ResultScreen extends Screen{
                 screenHeight/2 - Assets.resultscreenRegion.getRegionHeight()/2, 480, 240);
         touchPoint = new Vector3();
 
-        distanceStr = "Distance: " + distance;
+        distanceStr = "Distance: " + (int)distance + " m";
         candyStr = "Candy: " + candy;
         batchFont = new SpriteBatch();
 

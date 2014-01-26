@@ -81,7 +81,6 @@ public class PlayScreen extends Screen {
             backgroundPosition += background1.getWidth();
         }
         // picking which to render
-
             if((player.getX() - 500)% (256*32) < 64*32 && !randomized){
                 System.out.println("FIRST CALLED");
                 int mapNumber = rn.nextInt(3);
@@ -97,7 +96,6 @@ public class PlayScreen extends Screen {
                 randomized = true;
                 mapCount++;
             } else if ((player.getX() - 500) % (256*32) < 128*32 && (player.getX() - 500) % (256*32) > 64*32){
-
                 randomized = false;
             } else if ((player.getX() - 500) % (256*32) < 172*32 && !randomized){
                 System.out.println("SECOND CALLED");
@@ -115,10 +113,7 @@ public class PlayScreen extends Screen {
                 mapCount++;
             } else if ((player.getX() - 500) % (256*32) < 256*32 && (player.getX() - 500) % (256*32) > 172*32){
                 randomized = false;
-
             }
-
-
         float delay = 1.0f;
 
         if (!player.getAlive()) {
@@ -166,11 +161,9 @@ public class PlayScreen extends Screen {
 
             batchFont.begin();
             Assets.font.setScale(0.8f);
-            Assets.font.draw(batchFont, player.getDistance() + " m", 10, screenHeight - 10);
+            Assets.font.draw(batchFont, (int)player.getDistance() + " m" , 10, screenHeight - 10);
             Assets.font.draw(batchFont, "@ " + player.getCoin(), 10, screenHeight - 32);
             batchFont.end();
-
-
         } else {
             Gdx.gl.glClearColor(0.4f, 0.6f, 0.2f, 1);
             Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
@@ -198,7 +191,7 @@ public class PlayScreen extends Screen {
 
             batchFont.begin();
             Assets.font.setScale(0.8f);
-            Assets.font.draw(batchFont, player.getDistance() + " m", 10, screenHeight - 10);
+            Assets.font.draw(batchFont, (int)player.getDistance() + " m", 10, screenHeight - 10);
             Assets.font.draw(batchFont, "@ " + player.getCoin(), 10, screenHeight - 32);
             batchFont.end();
         }

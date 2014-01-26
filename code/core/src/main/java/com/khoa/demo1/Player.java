@@ -17,6 +17,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.maps.tiled.TiledMapTile;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.utils.TimeUtils;
 import com.badlogic.gdx.utils.Timer;
 
 import java.util.ArrayList;
@@ -43,7 +44,7 @@ public class Player extends GameObject implements InputProcessor {
     private String obstacleKey = "obstacle";
     private String waterKey = "water";
 
-    private int numDistance;
+    private float numDistance;
     private int numCoin;
     private boolean isAlive;
 
@@ -88,9 +89,7 @@ public class Player extends GameObject implements InputProcessor {
             spriteToChangeTo.setPosition(sprite.getX(), sprite.getY());
             sprite.set(spriteToChangeTo);
 
-
             // apply gravity
-
             velocity.y -= gravity * delta;
 
             // clamp velocity
@@ -124,11 +123,8 @@ public class Player extends GameObject implements InputProcessor {
             else if(velocity.y > 0) // going up
                 collisionY = collidesTop();
 
-
             // react to y collision
             if(collisionY) {
-
-
                 setY(oldY);
                 collisionY = false;
                 while(!collisionY){
@@ -138,8 +134,10 @@ public class Player extends GameObject implements InputProcessor {
                 setY(getY() + 1);
                 velocity.y = 0;
             }
+
             collectCoin();
-            numDistance += velocity.x * (delta / 2);
+            numDistance += velocity.x * (delta/100);
+            velocity.x += delta;
         }
     }
 
@@ -246,7 +244,7 @@ public class Player extends GameObject implements InputProcessor {
         return numCoin;
     }
 
-    public int getDistance() {
+    public float getDistance() {
         return numDistance;
     }
 
