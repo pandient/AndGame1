@@ -36,6 +36,7 @@ public class PlayScreen extends Screen {
     int mapCount = 1;
     Random rn = new Random();
 
+    private float timeSinceDead = 0;
     private int delayTime;
     private static PlayScreen thisScreen;
 
@@ -122,15 +123,16 @@ public class PlayScreen extends Screen {
 
         if (!player.getAlive()) {
             Assets.backgroundMusic.pause();
+            timeSinceDead += deltaTime;
             //Assets.obstacleHit.play();
-            Timer.schedule(new Timer.Task() {
-                @Override
-                public void run() {
+            //Timer.schedule(new Timer.Task() {
+            //    @Override
+            //    public void run() {
                     //game.setScreen(new GameOverScreen(game, player.getDistance(), player.getCoin()));
-                    setScreen((new ResultScreen(game, thisScreen, player.getDistance(), player.getCoin())));;
-                    System.out.println("SETTING SCREEN");
-                }
-            }, delay);
+            if (timeSinceDead > .75f)
+                setScreen((new ResultScreen(game, thisScreen, player.getDistance(), player.getCoin())));;
+             //   }
+            //}, delay);
         }
     }
 
@@ -164,8 +166,8 @@ public class PlayScreen extends Screen {
 
             batchFont.begin();
             Assets.font.setScale(0.8f);
-            Assets.font.draw(batchFont, player.getDistance() + " m", 10, 502);
-            Assets.font.draw(batchFont, "@ " + player.getCoin(), 10, 480);
+            Assets.font.draw(batchFont, player.getDistance() + " m", 10, screenHeight - 10);
+            Assets.font.draw(batchFont, "@ " + player.getCoin(), 10, screenHeight - 32);
             batchFont.end();
 
 
@@ -173,7 +175,7 @@ public class PlayScreen extends Screen {
             Gdx.gl.glClearColor(0.4f, 0.6f, 0.2f, 1);
             Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
-            guiCam.position.set(player.getX() + (player.getWidth() * 8), 256, 0);
+            guiCam.position.set(player.getX() + (player.getWidth() * 6), 256, 0);
 
             guiCam.update();
             renderer.setView(guiCam);
@@ -196,8 +198,8 @@ public class PlayScreen extends Screen {
 
             batchFont.begin();
             Assets.font.setScale(0.8f);
-            Assets.font.draw(batchFont, player.getDistance() + " m", 10, 502);
-            Assets.font.draw(batchFont, "@ " + player.getCoin(), 10, 480);
+            Assets.font.draw(batchFont, player.getDistance() + " m", 10, screenHeight - 10);
+            Assets.font.draw(batchFont, "@ " + player.getCoin(), 10, screenHeight - 32);
             batchFont.end();
         }
     }
