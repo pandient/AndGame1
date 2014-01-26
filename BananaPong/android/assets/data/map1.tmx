@@ -57,6 +57,21 @@
     <property name="blocked" value=""/>
    </properties>
   </tile>
+  <tile id="21">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
   <tile id="24">
    <properties>
     <property name="blocked" value=""/>
@@ -77,6 +92,21 @@
     <property name="platform" value=""/>
    </properties>
   </tile>
+  <tile id="29">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="31">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
   <tile id="32">
    <properties>
     <property name="obstacle" value=""/>
@@ -95,7 +125,7 @@
  </tileset>
  <layer name="Tile Layer 1" width="128" height="16">
   <data encoding="base64" compression="zlib">
-   eJztl90OQDAMhefvBk+AG+68/wuqiyWLYBtt1qb9khM3lJzTbuOcYfBhD2SkY77JZALNCVoidSx/3UjMP7X3U2cgF05e7Q/XnOel5V8a8woHzL6j7mMOmeeue9TroCY45G/o5e8+L4nYWl76/PdGqbPUCtoI6mrquxgVqAY1oBbU3dyTmz92r3OciTu8l08+cqUHDaARqZ7m/6/TSywfqQhn/tTgcPPXDJf8Y3unn/lQX7/7zz5Ntcd/eUeDIO8lRi1KXbOX8t0lPDHp0AGsThji
+   eJztl8sOgyAQRU3tqnZdTWtq647//8HOQtLJBOIDpkC5J7lxBMQ7Eh42DQAAAABAGGZDDH6PYQIgJnfSY6PGRB7Bf2NWrtrvzQXfOm/nqMb8q3nPryFH4KfG8c9lv9/jo5bzh+Y6D76cSC3TOUKfpf2f1bzvX0gd0zVCn6WNfwhv0pzaRAAa46/B2nduC9ONNDDZ+16UD6KtjG37oz46h/Y8L33ws8wo6kJ8HskjZz1Jr+U6LbHVxOpc5a76VHlIHzb25aDl4wNA8hYh
   </data>
  </layer>
 </map>

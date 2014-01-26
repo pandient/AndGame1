@@ -35,7 +35,7 @@ public class PlayScreen extends Screen {
         batch = new SpriteBatch();
         ground = new Texture("ground.png");
 
-        map = new TmxMapLoader().load("data/map2.tmx");
+        map = new TmxMapLoader().load("data/map3.tmx");
         renderer = new OrthogonalTiledMapRenderer(map);
         player = new Player(120, 64,(TiledMapTileLayer) map.getLayers().get(0));
         guiCam = new OrthographicCamera(512,480);
