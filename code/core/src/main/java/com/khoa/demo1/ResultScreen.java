@@ -54,6 +54,7 @@ public class ResultScreen extends Screen{
             if (OverlapTester.pointInRectangle(retryBounds, touchPoint.x, touchPoint.y)) {
                 //Assets.playSound(Assets.bounceSound);
                 game.setScreen(new PlayScreen(game));
+
                 Assets.backgroundMusic.play();
                 return;
             }
