@@ -16,8 +16,6 @@ public class MainMenuScreen extends Screen {
     OrthographicCamera guiCam;
     SpriteBatch batcher;
     Rectangle newgameBounds;
-    Rectangle aboutBounds;
-    Rectangle helpBounds;
     Vector3 touchPoint;
 
     public MainMenuScreen(Game game){
@@ -25,9 +23,7 @@ public class MainMenuScreen extends Screen {
         guiCam = new OrthographicCamera(480,320);
         guiCam.position.set(480 / 2, 320 / 2, 0);
         batcher = new SpriteBatch();
-        newgameBounds = new Rectangle(157, 125, 170, 34);
-        helpBounds = new Rectangle(157, 75, 168, 36);
-        aboutBounds = new Rectangle(157, 23, 161, 39);
+        newgameBounds = new Rectangle(0, 0, 1024, 512);
         touchPoint = new Vector3();
 
     }
@@ -48,11 +44,11 @@ public class MainMenuScreen extends Screen {
     //                game.setScreen(new Help1Screen(game));
     //                return;
     //            }
-            if (OverlapTester.pointInRectangle(aboutBounds, touchPoint.x, touchPoint.y)){
-                Assets.playSound(Assets.bounceSound);
-                game.setScreen(new AboutScreen(game));
-                return;
-            }
+//            if (OverlapTester.pointInRectangle(aboutBounds, touchPoint.x, touchPoint.y)){
+//                Assets.playSound(Assets.bounceSound);
+//                game.setScreen(new AboutScreen(game));
+//                return;
+//            }
         }
     }
 

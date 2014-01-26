@@ -15,6 +15,7 @@ import java.util.ArrayList;
 /**
  * Created by Khoa Nguyen on 24/01/14.
  */
+
 public class PlayScreen extends Screen {
 
     public static SpriteBatch batch;
@@ -45,7 +46,7 @@ public class PlayScreen extends Screen {
         background2 = new Texture("data/parallax.png");
         backgroundPosition = 0;
 
-        guiCam.position.set(player.getX() + player.getWidth()*3, 256, 0);
+        guiCam.position.set(player.getX() + player.getWidth() * 8, 256, 0);
         guiCam.update();
 
         gameObjects.add(player);
@@ -65,7 +66,9 @@ public class PlayScreen extends Screen {
         if(backgroundPosition < -background1.getWidth()){
             backgroundPosition += background1.getWidth();
         }
-        Gdx.app.log("PlayScreen", player.getY() + "");
+
+        if (!player.getAlive())
+            game.setScreen(new GameOverScreen(game, player.getDistance(), player.getCoin()));
     }
 
     @Override
@@ -74,13 +77,10 @@ public class PlayScreen extends Screen {
         Gdx.gl.glClearColor(0.4f, 0.6f, 0.2f, 1);
         Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
-        guiCam.position.set(player.getX() + (player.getWidth() * 3), 256, 0);
+        guiCam.position.set(player.getX() + (player.getWidth() * 8), 256, 0);
 
         guiCam.update();
         renderer.setView(guiCam);
-
-
-
 
         renderer.getSpriteBatch().begin();
         renderer.getSpriteBatch().draw(background1, guiCam.position.x -guiCam.viewportWidth/2 + backgroundPosition, 0);
@@ -94,12 +94,10 @@ public class PlayScreen extends Screen {
         player.render(renderer.getSpriteBatch());
         renderer.getSpriteBatch().end();
 
-
-
         batchFont.begin();
         Assets.font.setScale(0.8f);
-        Assets.font.draw(batchFont, player.getDistance() + "m", 10, 502);
-        Assets.font.draw(batchFont, "$" + player.getCoin(), 10, 480);
+        Assets.font.draw(batchFont, player.getDistance() + " m", 10, 502);
+        Assets.font.draw(batchFont, "@ " + player.getCoin(), 10, 480);
         batchFont.end();
     }
 

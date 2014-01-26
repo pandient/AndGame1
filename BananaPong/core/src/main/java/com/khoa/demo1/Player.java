@@ -28,7 +28,7 @@ public class Player extends GameObject implements InputProcessor {
 
     private Vector2 velocity = new Vector2();
 
-    private float speedX = 60 * 2, speedY = 60 * 30f , gravity = 60 * 50f , animationTime = 0;
+    private float speedX = 60 * 3, speedY = 60 * 36 , gravity = 60 * 54 , animationTime = 0;
 
     private boolean canJump;
 
@@ -39,9 +39,11 @@ public class Player extends GameObject implements InputProcessor {
     private String blockedKey = "blocked";
     private String coinKey = "candy";
     private String platformKey = "platform";
+    private String obstacleKey = "obstacle";
 
     private int numDistance;
     private int numCoin;
+    private boolean isAlive;
 
     List<Sprite> spriteArray = new ArrayList<Sprite>();
     Texture texture = new Texture("panda.png");
@@ -60,8 +62,10 @@ public class Player extends GameObject implements InputProcessor {
         sprite.setPosition(x,y);
         velocity.x = speedX;
         velocity.y = 0;
+
         numDistance = 0;
         numCoin = 0;
+        isAlive = true;
 
         spriteArray.add(new Sprite(frame1));
         spriteArray.add(new Sprite(frame2));
@@ -71,7 +75,6 @@ public class Player extends GameObject implements InputProcessor {
 
     public void update(float delta)
     {
-
         spriteIndex += 20*delta;
         Sprite spriteToChangeTo = spriteArray.get(((int) spriteIndex) % 4);
         spriteToChangeTo.setPosition(sprite.getX(), sprite.getY());
@@ -102,6 +105,7 @@ public class Player extends GameObject implements InputProcessor {
         if(collisionX) {
             setX(oldX);
             velocity.x = 0;
+            isAlive = false;
         }
 
         // move on y
@@ -127,8 +131,10 @@ public class Player extends GameObject implements InputProcessor {
             velocity.y = 0;
         }
 
-        collectCoin();
-        numDistance += velocity.x * (delta/2);
+        if (isAlive) {
+            collectCoin();
+            numDistance += velocity.x * (delta/2);
+        }
     }
 
     @Override
@@ -152,6 +158,8 @@ public class Player extends GameObject implements InputProcessor {
         {
             if(isCellBlocked(getX() + getWidth(), getY() + step))
                 return true;
+            if (isCellObstacle(getX() + getWidth(), getY() + step))
+                isAlive = false;
         }
         return false;
     }
@@ -161,6 +169,8 @@ public class Player extends GameObject implements InputProcessor {
         {
             if(isCellBlocked(getX() + step, getY() + getHeight()))
                 return true;
+            if (isCellObstacle(getX() + step, getY() - getHeight()))
+                isAlive = false;
         }
         return false;
     }
@@ -170,10 +180,10 @@ public class Player extends GameObject implements InputProcessor {
         {
             if(isCellBlocked(getX() + step, getY()))
                 return true;
-            if(isCellPlatform(getX() + step, getY())){
+            if(isCellPlatform(getX() + step, getY()))
                 return true;
-
-            }
+            if (isCellObstacle(getX() + step, getY()))
+                isAlive = false;
         }
         return false;
     }
@@ -198,6 +208,11 @@ public class Player extends GameObject implements InputProcessor {
         }
     }
 
+    private boolean isCellObstacle(float x, float y) {
+        TiledMapTileLayer.Cell cell = mapLayer.getCell((int) (x / mapLayer.getTileWidth()), (int) (y / mapLayer.getTileHeight()));
+        return cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey(obstacleKey);
+    }
+
     public int getCoin() {
         return numCoin;
     }
@@ -205,6 +220,8 @@ public class Player extends GameObject implements InputProcessor {
     public int getDistance() {
         return numDistance;
     }
+
+    public boolean getAlive() { return isAlive;}
 
     public float getHeight() {
         return this.sprite.getHeight();

@@ -77,6 +77,16 @@
     <property name="platform" value=""/>
    </properties>
   </tile>
+  <tile id="32">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
   <tile id="40">
    <properties>
     <property name="candy" value=""/>
@@ -85,7 +95,7 @@
  </tileset>
  <layer name="Tile Layer 1" width="128" height="16">
   <data encoding="base64" compression="zlib">
-   eJztlkEOwyAMBGnTXpq+IOkH+P8Haw5IKCqxEXaNg0da5RREdr2EEJwjUXsDExMLae7BGiP4Zhkt3zbQTtAHWcfz78O6bxbzp84+tQOtjORVrDxb3reWvzbuFQ+ccyc9x2fr3kB30AJ6gJ5Ce2g996TPwZnA5uoFWkHvP+zF0afsfNIa6vlznE29/3lLYH5p3/8yufOlpPLXYqa5w6h1Hsv/DO5Z1+4Eleyl5H1Jgl+dl8z/yiQvR78vUTrfk//MWMg/gXV+xvwXBmXPONaSFDV7K9+j4YnrWvoCwykaWQ==
+   eJztlkESwiAMRdHqxnqC6kZ33P+CpgtmGKc0QRJDSt7Mn65K6f8JIQTnm6i9gYGJmTT3YI0efLOMlm8L6EHQE1nH82/Dum8W86fWPrUHaunJq1h41rxvLX9t3CseOOtOuo731j2BzqAJdAFdhfZQe+5Jn4MjgdXVDTSD7n/Yi6NP3vOr5lDOn+Nsap3zlsD80r7/JVLP55LKH+MFegusO1LdYZR6Hst/D+5a1+4JKslLyfuSBFs9L5n/kVm97P2+ROn5lvxHppf8sdmJ9XxN/i1zWmrG//KNiUHJM461JEXN3sr/aHjiOpY+5lkbqA==
   </data>
  </layer>
 </map>
