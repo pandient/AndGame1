@@ -29,11 +29,11 @@ public class Player extends GameObject implements InputProcessor {
 
     private Vector2 velocity = new Vector2();
 
-    private float speedX = 60 * 3f, speedY = 60 * 36, gravity = 60 * 54, animationTime = 0;
+    private float speedX = 60 * 6f, speedY = 60 * 36, gravity = 60 * 54, animationTime = 0;
 
     private boolean canJump;
 
-    private TiledMapTileLayer mapLayer;
+    private TiledMapTileLayer mapLayer, mapLayer2;
 
     private Texture image;
     private Sprite sprite;
@@ -77,18 +77,26 @@ public class Player extends GameObject implements InputProcessor {
 
     public void update(float delta) {
         if (isAlive) {
-            spriteIndex += 20 * delta;
+            if((getX() + getWidth()/2) % (256*32) < 128*32){
+                mapLayer = (TiledMapTileLayer) PlayScreen.renderer.getMap().getLayers().get(0);
+            } else {
+                mapLayer = (TiledMapTileLayer) PlayScreen.renderer2.getMap().getLayers().get(0);
+            }
+
+            spriteIndex += 20*delta;
             Sprite spriteToChangeTo = spriteArray.get(((int) spriteIndex) % 4);
             spriteToChangeTo.setPosition(sprite.getX(), sprite.getY());
             sprite.set(spriteToChangeTo);
 
+
             // apply gravity
+
             velocity.y -= gravity * delta;
 
             // clamp velocity
-            if (velocity.y > speedY)
+            if(velocity.y > speedY)
                 velocity.y = speedY;
-            else if (velocity.y < -speedY)
+            else if(velocity.y < -speedY)
                 velocity.y = -speedY;
 
             // save old position
@@ -98,11 +106,11 @@ public class Player extends GameObject implements InputProcessor {
             // move on x
             setX(getX() + velocity.x * delta);
 
-            if (velocity.x > 0) // going right
+            if(velocity.x > 0) // going right
                 collisionX = collidesRight();
 
             // react to x collision
-            if (collisionX) {
+            if(collisionX) {
                 setX(oldX);
                 velocity.x = 0;
                 isAlive = false;
@@ -111,18 +119,19 @@ public class Player extends GameObject implements InputProcessor {
             // move on y
             setY(getY() + velocity.y * delta);
 
-            if (velocity.y < 0) // going down
-                canJump = collisionY = collidesBottom();
-            else if (velocity.y > 0) // going up
+            if(velocity.y < 0) // going down
+                canJump = collisionY = collidesBottom() ;
+            else if(velocity.y > 0) // going up
                 collisionY = collidesTop();
 
 
             // react to y collision
-            if (collisionY) {
+            if(collisionY) {
+
 
                 setY(oldY);
                 collisionY = false;
-                while (!collisionY) {
+                while(!collisionY){
                     setY(getY() - 1);
                     collisionY = collidesBottom();
                 }
@@ -285,6 +294,7 @@ public class Player extends GameObject implements InputProcessor {
                     velocity.y = speedY / 1.8f;
                     canJump = false;
                     Assets.playSound(Assets.jump);
+                    Gdx.app.log("","key down");
                 }
                 break;
         }
@@ -296,6 +306,7 @@ public class Player extends GameObject implements InputProcessor {
         switch (keycode) {
             case Input.Keys.A:
             case Input.Keys.D:
+
 
         }
         return true;

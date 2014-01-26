@@ -41,7 +41,7 @@ public class ResultScreen extends Screen{
         batchFont = new SpriteBatch();
 
         Assets.gameOver.play();
-
+        System.out.println("RESULT SCREEN");
 //        screenWidth = Gdx.graphics.getWidth();
 //        screenHeight = Gdx.graphics.getHeight();
     }
