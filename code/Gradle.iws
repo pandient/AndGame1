@@ -64,10 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PlayScreen.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PlayScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="24" selection-start="4782" selection-end="4782" vertical-scroll-proportion="0.7696139" vertical-offset="1201" max-vertical-offset="3825">
+            <state line="113" column="48" selection-start="4490" selection-end="4490" vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="4029">
               <folding />
             </state>
           </provider>
@@ -76,34 +76,38 @@
       <file leaf-file-name="TmxMapLoader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/TmxMapLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="603" column="46" selection-start="29321" selection-end="29321" vertical-scroll-proportion="-108.76923" vertical-offset="6760" max-vertical-offset="14263">
+            <state line="603" column="46" selection-start="29321" selection-end="29321" vertical-scroll-proportion="0.0" vertical-offset="10251" max-vertical-offset="14926">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AboutScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/AboutScreen.java">
+      <file leaf-file-name="Timer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/utils/Timer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="34" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1394">
+            <state line="175" column="29" selection-start="5789" selection-end="5789" vertical-scroll-proportion="0.0" vertical-offset="2975" max-vertical-offset="4386">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/res/values/strings.xml">
+      <file leaf-file-name="Player.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="41" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="204">
-              <folding />
+            <state line="185" column="49" selection-start="6266" selection-end="6266" vertical-scroll-proportion="0.7988506" vertical-offset="2643" max-vertical-offset="5865">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1569#1577#0" expanded="true" />
+                <element signature="e#6398#6399#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Assets.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Assets.java">
+      <file leaf-file-name="Runnable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-15/java/lang/Runnable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="50" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1207">
+            <state line="33" column="0" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -121,7 +125,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="22" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+            <state line="13" column="22" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -130,7 +134,7 @@
       <file leaf-file-name="Gradle.iws" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gradle.iws">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="17867">
+            <state line="30" column="0" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="17833">
               <folding />
             </state>
           </provider>
@@ -177,12 +181,12 @@
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/MainMenuScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/GameOverScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/ResultScreen.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/AboutScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Assets.java" />
         <option value="$PROJECT_DIR$/android/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java" />
       </list>
     </option>
   </component>
@@ -191,8 +195,10 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="105" />
+    <option name="y" value="288" />
     <option name="width" value="1280" />
-    <option name="height" value="1400" />
+    <option name="height" value="1160" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -225,6 +231,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -315,8 +323,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -383,19 +389,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -421,6 +414,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -555,7 +561,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="1400" extended-state="0" />
+    <frame x="105" y="288" width="1280" height="1160" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -565,19 +571,19 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932886" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31245166" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4074074" sideWeight="0.11471519" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32791957" sideWeight="0.8852848" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4074074" sideWeight="0.88449365" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26107594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31245166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.528481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3116883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -589,13 +595,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997763" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30775318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3101315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3101315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -634,27 +640,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="13" selection-start="4563" selection-end="4563" vertical-scroll-proportion="0.0" vertical-offset="2907" max-vertical-offset="3740">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1569#1577#0" expanded="true" />
-            <element signature="e#5560#5729#0" expanded="true" />
-            <element signature="e#5710#5711#0" expanded="true" />
-            <element signature="e#6248#6417#0" expanded="true" />
-            <element signature="e#6398#6399#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/InputProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="17" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1377" />
@@ -786,7 +771,9 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/graphics/g2d/Sprite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="476" column="0" selection-start="16509" selection-end="16509" vertical-scroll-proportion="0.0" vertical-offset="7398" max-vertical-offset="10098" />
+        <state line="476" column="0" selection-start="16509" selection-end="16509" vertical-scroll-proportion="0.0" vertical-offset="7398" max-vertical-offset="10098">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/GameObject.java">
@@ -872,20 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="35" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.1946387" vertical-offset="887" max-vertical-offset="5984">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1569#1577#0" expanded="true" />
-            <element signature="e#5560#5729#0" expanded="true" />
-            <element signature="e#5710#5711#0" expanded="true" />
-            <element signature="e#6248#6417#0" expanded="true" />
-            <element signature="e#6398#6399#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/AboutScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="34" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
@@ -916,7 +889,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gradle.iws">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="17629">
+        <state line="30" column="0" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="17833">
           <folding />
         </state>
       </provider>
@@ -951,15 +924,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/TmxMapLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="603" column="46" selection-start="29321" selection-end="29321" vertical-scroll-proportion="-108.76923" vertical-offset="6760" max-vertical-offset="14263">
+        <state line="603" column="46" selection-start="29321" selection-end="29321" vertical-scroll-proportion="0.0" vertical-offset="10251" max-vertical-offset="14926">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/PlayScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="24" selection-start="4782" selection-end="4782" vertical-scroll-proportion="0.7696139" vertical-offset="1201" max-vertical-offset="3825">
+        <state line="113" column="48" selection-start="4490" selection-end="4490" vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="4029">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/0.9.9/d20e52bfcfdeb3eed082668e9feca2e178e7ff7e/gdx-0.9.9-sources.jar!/com/badlogic/gdx/utils/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="29" selection-start="5789" selection-end="5789" vertical-scroll-proportion="0.0" vertical-offset="2434" max-vertical-offset="4114">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-15/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/khoa/demo1/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="49" selection-start="6266" selection-end="6266" vertical-scroll-proportion="0.7988506" vertical-offset="2643" max-vertical-offset="5865">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1569#1577#0" expanded="true" />
+            <element signature="e#6398#6399#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
